@@ -1,0 +1,172 @@
+.afs-eau-naturelle { font-family: "Eau Naturelle", "Helvetica", "Arial", "Lucida Grande", "Gill Sans", "Verdana", sans-serif; ;}
+
+.afs-liberation-serif { font-family: "Liberation Serif", "Times New Roman", "Georgia", "Palatino", "Hoefler Text", "Baskerville", serif; font-size: 1.002em;}
+
+.afs-liberation-serif { font-family: "Liberation Serif", "Times New Roman", "Georgia", "Palatino", "Hoefler Text", "Baskerville", serif; font-size: 1.002em;}
+
+.afs-tex-gyre-cursor { font-family: "TeX Gyre Cursor", Menlo, Courier New, Courier, Mono, monospace; font-size: 1.103em;}
+
+
+@font-face {
+font-family: 'Eau Naturelle';
+src: url('/fonts/eau_naturelle_sans_bold-webfont.eot');
+src: local('☺'), url('/fonts/eau_naturelle_sans_bold-webfont.woff') format('woff'), url('/fonts/eau_naturelle_sans_bold-webfont.ttf') format('truetype'), url('/fonts/eau_naturelle_sans_bold-webfont.svg#webfontX4pGz9fc') format('svg');
+font-weight: 700;
+font-style: normal;
+}
+
+
+@font-face {
+font-family: 'Eau Naturelle';
+src: url('/fonts/eau_naturelle_sans_heavy-webfont.eot');
+src: local('☺'), url('/fonts/eau_naturelle_sans_heavy-webfont.woff') format('woff'), url('/fonts/eau_naturelle_sans_heavy-webfont.ttf') format('truetype'), url('/fonts/eau_naturelle_sans_heavy-webfont.svg#webfontX4pGz9fc') format('svg');
+font-weight: 900;
+font-style: normal;
+}
+
+
+@font-face {
+font-family: 'Eau Naturelle';
+src: url('/fonts/eau_naturelle_sans_light-webfont.eot');
+src: local('☺'), url('/fonts/eau_naturelle_sans_light-webfont.woff') format('woff'), url('/fonts/eau_naturelle_sans_light-webfont.ttf') format('truetype'), url('/fonts/eau_naturelle_sans_light-webfont.svg#webfontX4pGz9fc') format('svg');
+font-weight: 200;
+font-style: normal;
+}
+
+
+@font-face {
+font-family: 'Eau Naturelle';
+src: url('/fonts/eau_naturelle_sans_medium-webfont.eot');
+src: local('☺'), url('/fonts/eau_naturelle_sans_medium-webfont.woff') format('woff'), url('/fonts/eau_naturelle_sans_medium-webfont.ttf') format('truetype'), url('/fonts/eau_naturelle_sans_medium-webfont.svg#webfontX4pGz9fc') format('svg');
+font-weight: 500;
+font-style: normal;
+}
+
+
+@font-face {
+font-family: 'Eau Naturelle';
+src: url('/fonts/eau_naturelle_sans_regular-webfont.eot');
+src: local('☺'), url('/fonts/eau_naturelle_sans_regular-webfont.woff') format('woff'), url('/fonts/eau_naturelle_sans_regular-webfont.ttf') format('truetype'), url('/fonts/eau_naturelle_sans_regular-webfont.svg#webfontX4pGz9fc') format('svg');
+font-weight: 400;
+font-style: normal;
+}
+
+
+@font-face {
+font-family: 'Eau Naturelle';
+src: url('/fonts/eau_naturelle_sans_thin-webfont.eot');
+src: local('☺'), url('/fonts/eau_naturelle_sans_thin-webfont.woff') format('woff'), url('/fonts/eau_naturelle_sans_thin-webfont.ttf') format('truetype'), url('/fonts/eau_naturelle_sans_thin-webfont.svg#webfontX4pGz9fc') format('svg');
+font-weight: 400;
+font-style: normal;
+}
+
+
+
+@font-face {
+font-family: 'Liberation Serif';
+src: url('/fonts/LiberationSerif-Bold-webfont.eot');
+src: local('☺'), url('/fonts/LiberationSerif-Bold-webfont.woff') format('woff'), url('/fonts/LiberationSerif-Bold-webfont.ttf') format('truetype'), url('/fonts/LiberationSerif-Bold-webfont.svg#webfontX4pGz9fc') format('svg');
+font-weight: 700;
+font-style: normal;
+}
+
+
+@font-face {
+font-family: 'Liberation Serif';
+src: url('/fonts/LiberationSerif-BoldItalic-webfont.eot');
+src: local('☺'), url('/fonts/LiberationSerif-BoldItalic-webfont.woff') format('woff'), url('/fonts/LiberationSerif-BoldItalic-webfont.ttf') format('truetype'), url('/fonts/LiberationSerif-BoldItalic-webfont.svg#webfontX4pGz9fc') format('svg');
+font-weight: 700;
+font-style: italic;
+}
+
+
+@font-face {
+font-family: 'Liberation Serif';
+src: url('/fonts/LiberationSerif-Italic-webfont.eot');
+src: local('☺'), url('/fonts/LiberationSerif-Italic-webfont.woff') format('woff'), url('/fonts/LiberationSerif-Italic-webfont.ttf') format('truetype'), url('/fonts/LiberationSerif-Italic-webfont.svg#webfontX4pGz9fc') format('svg');
+font-weight: 400;
+font-style: italic;
+}
+
+
+@font-face {
+font-family: 'Liberation Serif';
+src: url('/fonts/LiberationSerif-Regular-webfont.eot');
+src: local('☺'), url('/fonts/LiberationSerif-Regular-webfont.woff') format('woff'), url('/fonts/LiberationSerif-Regular-webfont.ttf') format('truetype'), url('/fonts/LiberationSerif-Regular-webfont.svg#webfontX4pGz9fc') format('svg');
+font-weight: 400;
+font-style: normal;
+}
+
+
+
+@font-face {
+font-family: 'Liberation Serif';
+src: url('/fonts/LiberationSerif-Bold-webfont.eot');
+src: local('☺'), url('/fonts/LiberationSerif-Bold-webfont.woff') format('woff'), url('/fonts/LiberationSerif-Bold-webfont.ttf') format('truetype'), url('/fonts/LiberationSerif-Bold-webfont.svg#webfontX4pGz9fc') format('svg');
+font-weight: 700;
+font-style: normal;
+}
+
+
+@font-face {
+font-family: 'Liberation Serif';
+src: url('/fonts/LiberationSerif-BoldItalic-webfont.eot');
+src: local('☺'), url('/fonts/LiberationSerif-BoldItalic-webfont.woff') format('woff'), url('/fonts/LiberationSerif-BoldItalic-webfont.ttf') format('truetype'), url('/fonts/LiberationSerif-BoldItalic-webfont.svg#webfontX4pGz9fc') format('svg');
+font-weight: 700;
+font-style: italic;
+}
+
+
+@font-face {
+font-family: 'Liberation Serif';
+src: url('/fonts/LiberationSerif-Italic-webfont.eot');
+src: local('☺'), url('/fonts/LiberationSerif-Italic-webfont.woff') format('woff'), url('/fonts/LiberationSerif-Italic-webfont.ttf') format('truetype'), url('/fonts/LiberationSerif-Italic-webfont.svg#webfontX4pGz9fc') format('svg');
+font-weight: 400;
+font-style: italic;
+}
+
+
+@font-face {
+font-family: 'Liberation Serif';
+src: url('/fonts/LiberationSerif-Regular-webfont.eot');
+src: local('☺'), url('/fonts/LiberationSerif-Regular-webfont.woff') format('woff'), url('/fonts/LiberationSerif-Regular-webfont.ttf') format('truetype'), url('/fonts/LiberationSerif-Regular-webfont.svg#webfontX4pGz9fc') format('svg');
+font-weight: 400;
+font-style: normal;
+}
+
+
+
+@font-face {
+font-family: 'TeX Gyre Cursor';
+src: url('/fonts/texgyrecursor-bold-webfont.eot');
+src: local('☺'), url('/fonts/texgyrecursor-bold-webfont.woff') format('woff'), url('/fonts/texgyrecursor-bold-webfont.ttf') format('truetype'), url('/fonts/texgyrecursor-bold-webfont.svg#webfontX4pGz9fc') format('svg');
+font-weight: 700;
+font-style: normal;
+}
+
+
+@font-face {
+font-family: 'TeX Gyre Cursor';
+src: url('/fonts/texgyrecursor-bolditalic-webfont.eot');
+src: local('☺'), url('/fonts/texgyrecursor-bolditalic-webfont.woff') format('woff'), url('/fonts/texgyrecursor-bolditalic-webfont.ttf') format('truetype'), url('/fonts/texgyrecursor-bolditalic-webfont.svg#webfontX4pGz9fc') format('svg');
+font-weight: 700;
+font-style: italic;
+}
+
+
+@font-face {
+font-family: 'TeX Gyre Cursor';
+src: url('/fonts/texgyrecursor-italic-webfont.eot');
+src: local('☺'), url('/fonts/texgyrecursor-italic-webfont.woff') format('woff'), url('/fonts/texgyrecursor-italic-webfont.ttf') format('truetype'), url('/fonts/texgyrecursor-italic-webfont.svg#webfontX4pGz9fc') format('svg');
+font-weight: 400;
+font-style: italic;
+}
+
+
+@font-face {
+font-family: 'TeX Gyre Cursor';
+src: url('/fonts/texgyrecursor-regular-webfont.eot');
+src: local('☺'), url('/fonts/texgyrecursor-regular-webfont.woff') format('woff'), url('/fonts/texgyrecursor-regular-webfont.ttf') format('truetype'), url('/fonts/texgyrecursor-regular-webfont.svg#webfontX4pGz9fc') format('svg');
+font-weight: 400;
+font-style: normal;
+}

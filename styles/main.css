@@ -1,1 +1,7 @@
 /* main */
+html,body{background:#e6e7e8;background:rgba(230,231,232,1);}
+body{
+  line-height:1;
+  font:10px/1 "Liberation Serif";
+  font-family:"Liberation Serif", "Times New Roman", "Georgia", "Palatino", "Hoefler Text", "Baskerville", serif;
+}
