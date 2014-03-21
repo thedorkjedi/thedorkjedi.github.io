@@ -10,7 +10,7 @@
 @font-face {
 font-family: 'ChunkFive';
 src: url('/fonts/Chunkfive-webfont.eot');
-src: local('☺'), url('/fonts/Chunkfive-webfont.woff') format('woff'), url('/fonts/Chunkfive-webfont.ttf') format('truetype'), url('/fonts/Chunkfive-webfont.svg#webfontX4pGz9fc') format('svg');
+src: local('☺'), url('https://github.com/thedorkjedi/thedorkjedi.github.io/blob/master/fonts/Chunkfive.otf?raw=true') format('woff'), url('/fonts/Chunkfive-webfont.ttf') format('truetype'), url('/fonts/Chunkfive-webfont.svg#webfontX4pGz9fc') format('svg');
 font-weight: 400;
 font-style: normal;
 }
