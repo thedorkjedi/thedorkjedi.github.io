@@ -9,8 +9,8 @@
 
 @font-face {
 font-family: 'ChunkFive';
-src: url('https://github.com/thedorkjedi/thedorkjedi.github.io/blob/master/fonts/Chunkfive-webfont.eot?raw=true');
-src: local('☺'), url('https://github.com/thedorkjedi/thedorkjedi.github.io/blob/master/fonts/Chunkfive-webfont.woff?raw=true') format('woff?raw=true'), url('https://github.com/thedorkjedi/thedorkjedi.github.io/blob/master/fonts/Chunkfive-webfont.ttf?raw=true') format('truetype'), url('https://github.com/thedorkjedi/thedorkjedi.github.io/blob/master/fonts/Chunkfive-webfont.svg#webfontX4pGz9fc?raw=true') format('svg');
+src: url('/fonts/Chunkfive-webfont.eot');
+src: local('☺'), url('https://github.com/thedorkjedi/thedorkjedi.github.io/blob/master/fonts/Chunkfive-webfont.woff?raw=true') format('woff'), url('/fonts/Chunkfive-webfont.ttf') format('truetype'), url('/fonts/Chunkfive-webfont.svg#webfontX4pGz9fc') format('svg');
 font-weight: 400;
 font-style: normal;
 }
@@ -19,8 +19,8 @@ font-style: normal;
 
 @font-face {
 font-family: 'PT Sans';
-src: url('https://github.com/thedorkjedi/thedorkjedi.github.io/blob/master/fonts/PTS75F-webfont.eot?raw=true');
-src: local('☺'), url('https://github.com/thedorkjedi/thedorkjedi.github.io/blob/master/fonts/PTS75F-webfont.woff?raw=true') format('woff?raw=true'), url('https://github.com/thedorkjedi/thedorkjedi.github.io/blob/master/fonts/PTS75F-webfont.ttf?raw=true') format('truetype'), url('https://github.com/thedorkjedi/thedorkjedi.github.io/blob/master/fonts/PTS75F-webfont.svg#webfontX4pGz9fc?raw=true') format('svg');
+src: url('/fonts/PTS75F-webfont.eot');
+src: local('☺'), url('https://github.com/thedorkjedi/thedorkjedi.github.io/blob/master/fonts/PTS75F-webfont.woff?raw=true') format('woff'), url('/fonts/PTS75F-webfont.ttf') format('truetype'), url('/fonts/PTS75F-webfont.svg#webfontX4pGz9fc') format('svg');
 font-weight: 700;
 font-style: normal;
 }
@@ -28,8 +28,8 @@ font-style: normal;
 
 @font-face {
 font-family: 'PT Sans';
-src: url('https://github.com/thedorkjedi/thedorkjedi.github.io/blob/master/fonts/PTS76F-webfont.eot?raw=true');
-src: local('☺'), url('https://github.com/thedorkjedi/thedorkjedi.github.io/blob/master/fonts/PTS76F-webfont.woff?raw=true') format('woff?raw=true'), url('https://github.com/thedorkjedi/thedorkjedi.github.io/blob/master/fonts/PTS76F-webfont.ttf?raw=true') format('truetype'), url('https://github.com/thedorkjedi/thedorkjedi.github.io/blob/master/fonts/PTS76F-webfont.svg#webfontX4pGz9fc?raw=true') format('svg');
+src: url('/fonts/PTS76F-webfont.eot');
+src: local('☺'), url('https://github.com/thedorkjedi/thedorkjedi.github.io/blob/master/fonts/PTS76F-webfont.woff?raw=true') format('woff'), url('/fonts/PTS76F-webfont.ttf') format('truetype'), url('/fonts/PTS76F-webfont.svg#webfontX4pGz9fc') format('svg');
 font-weight: 700;
 font-style: italic;
 }
@@ -37,8 +37,8 @@ font-style: italic;
 
 @font-face {
 font-family: 'PT Sans';
-src: url('https://github.com/thedorkjedi/thedorkjedi.github.io/blob/master/fonts/PTS56F-webfont.eot?raw=true');
-src: local('☺'), url('https://github.com/thedorkjedi/thedorkjedi.github.io/blob/master/fonts/PTS56F-webfont.woff?raw=true') format('woff?raw=true'), url('https://github.com/thedorkjedi/thedorkjedi.github.io/blob/master/fonts/PTS56F-webfont.ttf?raw=true') format('truetype'), url('https://github.com/thedorkjedi/thedorkjedi.github.io/blob/master/fonts/PTS56F-webfont.svg#webfontX4pGz9fc?raw=true') format('svg');
+src: url('/fonts/PTS56F-webfont.eot');
+src: local('☺'), url('https://github.com/thedorkjedi/thedorkjedi.github.io/blob/master/fonts/PTS56F-webfont.woff?raw=true') format('woff'), url('/fonts/PTS56F-webfont.ttf') format('truetype'), url('/fonts/PTS56F-webfont.svg#webfontX4pGz9fc') format('svg');
 font-weight: 400;
 font-style: italic;
 }
@@ -46,8 +46,8 @@ font-style: italic;
 
 @font-face {
 font-family: 'PT Sans';
-src: url('https://github.com/thedorkjedi/thedorkjedi.github.io/blob/master/fonts/PTS55F-webfont.eot?raw=true');
-src: local('☺'), url('https://github.com/thedorkjedi/thedorkjedi.github.io/blob/master/fonts/PTS55F-webfont.woff?raw=true') format('woff?raw=true'), url('https://github.com/thedorkjedi/thedorkjedi.github.io/blob/master/fonts/PTS55F-webfont.ttf?raw=true') format('truetype'), url('https://github.com/thedorkjedi/thedorkjedi.github.io/blob/master/fonts/PTS55F-webfont.svg#webfontX4pGz9fc?raw=true') format('svg');
+src: url('/fonts/PTS55F-webfont.eot');
+src: local('☺'), url('https://github.com/thedorkjedi/thedorkjedi.github.io/blob/master/fonts/PTS55F-webfont.woff?raw=true') format('woff'), url('/fonts/PTS55F-webfont.ttf') format('truetype'), url('/fonts/PTS55F-webfont.svg#webfontX4pGz9fc') format('svg');
 font-weight: 400;
 font-style: normal;
 }
@@ -56,8 +56,8 @@ font-style: normal;
 
 @font-face {
 font-family: 'Nobile';
-src: url('https://github.com/thedorkjedi/thedorkjedi.github.io/blob/master/fonts/nobile_bold-webfont.eot?raw=true');
-src: local('☺'), url('https://github.com/thedorkjedi/thedorkjedi.github.io/blob/master/fonts/nobile_bold-webfont.woff?raw=true') format('woff?raw=true'), url('https://github.com/thedorkjedi/thedorkjedi.github.io/blob/master/fonts/nobile_bold-webfont.ttf?raw=true') format('truetype'), url('https://github.com/thedorkjedi/thedorkjedi.github.io/blob/master/fonts/nobile_bold-webfont.svg#webfontX4pGz9fc?raw=true') format('svg');
+src: url('/fonts/nobile_bold-webfont.eot');
+src: local('☺'), url('https://github.com/thedorkjedi/thedorkjedi.github.io/blob/master/fonts/nobile_bold-webfont.woff?raw=true') format('woff'), url('/fonts/nobile_bold-webfont.ttf') format('truetype'), url('/fonts/nobile_bold-webfont.svg#webfontX4pGz9fc') format('svg');
 font-weight: 700;
 font-style: normal;
 }
@@ -65,8 +65,8 @@ font-style: normal;
 
 @font-face {
 font-family: 'Nobile';
-src: url('https://github.com/thedorkjedi/thedorkjedi.github.io/blob/master/fonts/nobile_bold_italic-webfont.eot?raw=true');
-src: local('☺'), url('https://github.com/thedorkjedi/thedorkjedi.github.io/blob/master/fonts/nobile_bold_italic-webfont.woff?raw=true') format('woff?raw=true'), url('https://github.com/thedorkjedi/thedorkjedi.github.io/blob/master/fonts/nobile_bold_italic-webfont.ttf?raw=true') format('truetype'), url('https://github.com/thedorkjedi/thedorkjedi.github.io/blob/master/fonts/nobile_bold_italic-webfont.svg#webfontX4pGz9fc?raw=true') format('svg');
+src: url('/fonts/nobile_bold_italic-webfont.eot');
+src: local('☺'), url('https://github.com/thedorkjedi/thedorkjedi.github.io/blob/master/fonts/nobile_bold_italic-webfont.woff?raw=true') format('woff'), url('/fonts/nobile_bold_italic-webfont.ttf') format('truetype'), url('/fonts/nobile_bold_italic-webfont.svg#webfontX4pGz9fc') format('svg');
 font-weight: 700;
 font-style: italic;
 }
@@ -74,8 +74,8 @@ font-style: italic;
 
 @font-face {
 font-family: 'Nobile';
-src: url('https://github.com/thedorkjedi/thedorkjedi.github.io/blob/master/fonts/nobile_italic-webfont.eot?raw=true');
-src: local('☺'), url('https://github.com/thedorkjedi/thedorkjedi.github.io/blob/master/fonts/nobile_italic-webfont.woff?raw=true') format('woff?raw=true'), url('https://github.com/thedorkjedi/thedorkjedi.github.io/blob/master/fonts/nobile_italic-webfont.ttf?raw=true') format('truetype'), url('https://github.com/thedorkjedi/thedorkjedi.github.io/blob/master/fonts/nobile_italic-webfont.svg#webfontX4pGz9fc?raw=true') format('svg');
+src: url('/fonts/nobile_italic-webfont.eot');
+src: local('☺'), url('https://github.com/thedorkjedi/thedorkjedi.github.io/blob/master/fonts/nobile_italic-webfont.woff?raw=true') format('woff'), url('/fonts/nobile_italic-webfont.ttf') format('truetype'), url('/fonts/nobile_italic-webfont.svg#webfontX4pGz9fc') format('svg');
 font-weight: 400;
 font-style: italic;
 }
@@ -83,8 +83,8 @@ font-style: italic;
 
 @font-face {
 font-family: 'Nobile';
-src: url('https://github.com/thedorkjedi/thedorkjedi.github.io/blob/master/fonts/nobile-webfont.eot?raw=true');
-src: local('☺'), url('https://github.com/thedorkjedi/thedorkjedi.github.io/blob/master/fonts/nobile-webfont.woff?raw=true') format('woff?raw=true'), url('https://github.com/thedorkjedi/thedorkjedi.github.io/blob/master/fonts/nobile-webfont.ttf?raw=true') format('truetype'), url('https://github.com/thedorkjedi/thedorkjedi.github.io/blob/master/fonts/nobile-webfont.svg#webfontX4pGz9fc?raw=true') format('svg');
+src: url('/fonts/nobile-webfont.eot');
+src: local('☺'), url('https://github.com/thedorkjedi/thedorkjedi.github.io/blob/master/fonts/nobile-webfont.woff?raw=true') format('woff'), url('/fonts/nobile-webfont.ttf') format('truetype'), url('/fonts/nobile-webfont.svg#webfontX4pGz9fc') format('svg');
 font-weight: 400;
 font-style: normal;
 }
@@ -93,8 +93,8 @@ font-style: normal;
 
 @font-face {
 font-family: 'Ubuntu';
-src: url('https://github.com/thedorkjedi/thedorkjedi.github.io/blob/master/fonts/Ubuntu-B-webfont.eot?raw=true');
-src: local('☺'), url('https://github.com/thedorkjedi/thedorkjedi.github.io/blob/master/fonts/Ubuntu-B-webfont.woff?raw=true') format('woff?raw=true'), url('https://github.com/thedorkjedi/thedorkjedi.github.io/blob/master/fonts/Ubuntu-B-webfont.ttf?raw=true') format('truetype'), url('https://github.com/thedorkjedi/thedorkjedi.github.io/blob/master/fonts/Ubuntu-B-webfont.svg#webfontX4pGz9fc?raw=true') format('svg');
+src: url('/fonts/Ubuntu-B-webfont.eot');
+src: local('☺'), url('https://github.com/thedorkjedi/thedorkjedi.github.io/blob/master/fonts/Ubuntu-B-webfont.woff?raw=true') format('woff'), url('/fonts/Ubuntu-B-webfont.ttf') format('truetype'), url('/fonts/Ubuntu-B-webfont.svg#webfontX4pGz9fc') format('svg');
 font-weight: 700;
 font-style: normal;
 }
@@ -102,8 +102,8 @@ font-style: normal;
 
 @font-face {
 font-family: 'Ubuntu';
-src: url('https://github.com/thedorkjedi/thedorkjedi.github.io/blob/master/fonts/Ubuntu-BI-webfont.eot?raw=true');
-src: local('☺'), url('https://github.com/thedorkjedi/thedorkjedi.github.io/blob/master/fonts/Ubuntu-BI-webfont.woff?raw=true') format('woff?raw=true'), url('https://github.com/thedorkjedi/thedorkjedi.github.io/blob/master/fonts/Ubuntu-BI-webfont.ttf?raw=true') format('truetype'), url('https://github.com/thedorkjedi/thedorkjedi.github.io/blob/master/fonts/Ubuntu-BI-webfont.svg#webfontX4pGz9fc?raw=true') format('svg');
+src: url('/fonts/Ubuntu-BI-webfont.eot');
+src: local('☺'), url('https://github.com/thedorkjedi/thedorkjedi.github.io/blob/master/fonts/Ubuntu-BI-webfont.woff?raw=true') format('woff'), url('/fonts/Ubuntu-BI-webfont.ttf') format('truetype'), url('/fonts/Ubuntu-BI-webfont.svg#webfontX4pGz9fc') format('svg');
 font-weight: 700;
 font-style: italic;
 }
@@ -111,8 +111,8 @@ font-style: italic;
 
 @font-face {
 font-family: 'Ubuntu';
-src: url('https://github.com/thedorkjedi/thedorkjedi.github.io/blob/master/fonts/Ubuntu-I-webfont.eot?raw=true');
-src: local('☺'), url('https://github.com/thedorkjedi/thedorkjedi.github.io/blob/master/fonts/Ubuntu-I-webfont.woff?raw=true') format('woff?raw=true'), url('https://github.com/thedorkjedi/thedorkjedi.github.io/blob/master/fonts/Ubuntu-I-webfont.ttf?raw=true') format('truetype'), url('https://github.com/thedorkjedi/thedorkjedi.github.io/blob/master/fonts/Ubuntu-I-webfont.svg#webfontX4pGz9fc?raw=true') format('svg');
+src: url('/fonts/Ubuntu-I-webfont.eot');
+src: local('☺'), url('https://github.com/thedorkjedi/thedorkjedi.github.io/blob/master/fonts/Ubuntu-I-webfont.woff?raw=true') format('woff'), url('/fonts/Ubuntu-I-webfont.ttf') format('truetype'), url('/fonts/Ubuntu-I-webfont.svg#webfontX4pGz9fc') format('svg');
 font-weight: 400;
 font-style: italic;
 }
@@ -120,8 +120,8 @@ font-style: italic;
 
 @font-face {
 font-family: 'Ubuntu';
-src: url('https://github.com/thedorkjedi/thedorkjedi.github.io/blob/master/fonts/Ubuntu-R-webfont.eot?raw=true');
-src: local('☺'), url('https://github.com/thedorkjedi/thedorkjedi.github.io/blob/master/fonts/Ubuntu-R-webfont.woff?raw=true') format('woff?raw=true'), url('https://github.com/thedorkjedi/thedorkjedi.github.io/blob/master/fonts/Ubuntu-R-webfont.ttf?raw=true') format('truetype'), url('https://github.com/thedorkjedi/thedorkjedi.github.io/blob/master/fonts/Ubuntu-R-webfont.svg#webfontX4pGz9fc?raw=true') format('svg');
+src: url('/fonts/Ubuntu-R-webfont.eot');
+src: local('☺'), url('https://github.com/thedorkjedi/thedorkjedi.github.io/blob/master/fonts/Ubuntu-R-webfont.woff?raw=true') format('woff'), url('/fonts/Ubuntu-R-webfont.ttf') format('truetype'), url('/fonts/Ubuntu-R-webfont.svg#webfontX4pGz9fc') format('svg');
 font-weight: 400;
 font-style: normal;
 }
