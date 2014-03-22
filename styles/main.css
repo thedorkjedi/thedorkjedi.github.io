@@ -7,4 +7,7 @@ body{line-height:1;position:relative;font:10px/1 "PT Sans";font-family:"PT Sans"
 h1,h2,h3,h4,h5,h6{font-family: "Domine", Rockwell, serif;font-weight:900}
 .title-heading{font-size:2.4rem;padding:1.2rem;background:#231f20;background:rgba(35,31,32,1);width:28rem;color:#fff}
 .subtitle-heading{font-size:1.2rem;padding:.7rem;background:#58595b;background:rgba(88,89,91,1);width:8rem;color:#fff}
+.support-heading{background:#808285;background:rgba(128,130,133,1);font-size:.8rem;color:#EFEFEF;width:8rem;padding:.8rem 0.7rem;}
+.support-heading a{color:#FFF;}
+.subtitle-heading:hover + .support-heading{background:#000;}
 .regular-content{font-size:.7rem;padding:.7rem;width:8rem;background:#a7a9ac;background:rgba(167,169,172,.1);box-shadow:-3px 2px 4px rgba(0,0,0,.3);color:#666}
