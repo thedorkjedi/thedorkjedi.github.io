@@ -11,4 +11,5 @@ h1,h2,h3,h4,h5,h6{font-family: "Domine", Rockwell, serif;font-weight:900}
 .link-heading a{color:#FFF;}
 
 .subtitle-heading:hover + .link-heading{display:block}
+.link-heading:hover{display:block}
 .regular-content{font-size:.7rem;padding:.7rem;width:8rem;background:#a7a9ac;background:rgba(167,169,172,.1);box-shadow:-3px 2px 4px rgba(0,0,0,.3);color:#666}
