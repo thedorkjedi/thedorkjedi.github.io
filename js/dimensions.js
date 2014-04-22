@@ -24,12 +24,8 @@ core.dimensions.prototype.setSquares = function(){
 
       for( var i=0; i<(numberOfSquares * numberOfSquares); i++ ){
         sqr.push(document.createElement('div'));
-        sqr[i].style.width = "";
-        sqr[i].style.height = "";
-
         sqr[i].className = className;
-        sqr[i].style.width = widths + "px";
-        sqr[i].style.height = widths + "px";
+        sqr[i].setAttribute("style","width:" + widths + "px;" + "height:" +  widths + "px;");
 
         console.log(sqr[i].style.width);
       }
