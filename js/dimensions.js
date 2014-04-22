@@ -11,7 +11,7 @@ core.dimensions = function(){
   }
 }
 
-core.prototype.backgroundSquares = function(){
+core.dimensions.prototype.backgroundSquares = function(){
     var _this = this;
     console.log(_this.screen);
 }
