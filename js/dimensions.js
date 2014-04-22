@@ -27,6 +27,8 @@ core.dimensions.prototype.setSquares = function(){
         sqr[i].className = className;
         sqr[i].style.width = widths;
         sqr[i].style.height = widths;
+
+        console.log(sqr[i].style.width)
       }
 
       return sqr;
