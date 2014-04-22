@@ -32,10 +32,11 @@ core.dimensions.prototype.setSquares = function(){
     }
 
     var sqr = squares();
+    var bg = document.getElementsByClassName('background')[0];
+
     bg.innerHTML = "";
 
     for(i in sqr){
-      var bg = document.getElementsByClassName('background')[0];
       bg.appendChild(sqr[i]);
     }
 
