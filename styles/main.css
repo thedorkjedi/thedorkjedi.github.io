@@ -16,7 +16,7 @@ h1,h2,h3,h4,h5,h6{font-family: "Domine", Rockwell, serif;font-weight:900}
 
 .background{}
 .bg-squares{ box-sizing:border-box; float:left; border: 1px solid #CCC; transition: all .5s; }
-.bg-squares:hover{ background:#868686;border-color:#FFF; }
+.bg-squares:hover{ background:#868686;border-color:#231f20; }
 
 @media only screen and (max-width:480px){
   .header{ position:static; height: auto; }
