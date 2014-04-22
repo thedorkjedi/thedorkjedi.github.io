@@ -28,12 +28,8 @@ core.dimensions.prototype.setSquares = function(){
       return sqr;
     }
 
-   return {
-       setBackground: function(){
-         var sqr = this.squares;
-         for(i in sqr){
-           document.body.appendChild(sqr[i]);
-         }
-       }
-   }
+     var sqr = this.squares();
+     for(i in sqr){
+       document.body.appendChild(sqr[i]);
+     }
 }
