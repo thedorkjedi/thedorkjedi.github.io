@@ -25,10 +25,10 @@ core.dimensions.prototype.setSquares = function(){
       for( var i=0; i<(numberOfSquares * numberOfSquares); i++ ){
         sqr.push(document.createElement('div'));
         sqr[i].className = className;
-        sqr[i].style.width = widths;
-        sqr[i].style.height = widths;
+        sqr[i].style.width = widths + "px";
+        sqr[i].style.height = widths + "px";
 
-        console.log(sqr[i].style.width)
+        console.log(sqr[i].style.width);
       }
 
       return sqr;
