@@ -15,7 +15,7 @@ h1,h2,h3,h4,h5,h6{font-family: "Domine", Rockwell, serif;font-weight:900}
 .regular-content{font-size:.7rem;padding:.7rem;width:8rem;background:#a7a9ac;background:rgba(167,169,172,.1);box-shadow:-3px 2px 4px rgba(0,0,0,.3);color:#666}
 
 @media only screen and (max-width:480px){
-  .header{ position:static; width:100%; height: auto; }
-  .title-heading, .subtitle-heading,.link-heading,.regular-content{ width:100%; }
+  .header{ position:static; height: auto; }
+  .header,.title-heading, .subtitle-heading,.link-heading,.regular-content,.heading-details{ width:100%; }
   .heading-details{margin-top:-38px;}
 }
