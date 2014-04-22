@@ -19,7 +19,7 @@ core.dimensions.prototype.setSquares = function(){
         widths = (this.screen()) / numberOfSquares;
     this.squares = function(){
       var sqr = [],
-      for(var i=0;i<numberOfSquares,i++){
+      for( var i=0; i<numberOfSquares; i++ ){
         sqr.push(document.createElement('div'));
         sqr[i].className = "bg-squares";
         sqr[i].style.cssText = "width:" + widths + "; height:" + widths + ";";

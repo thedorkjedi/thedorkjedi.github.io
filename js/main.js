@@ -1,10 +1,13 @@
 core = core || {};
 
 core.home = function(){
-  var self = core;
-  var background = new core.dimensions();
+  return {
+    init: function(){
 
-  background.setSquares();
+      var background = new core.dimensions();
+      background.setSquares();
+    }
+  }
 }
 
-core.home();
+core.home.init();
