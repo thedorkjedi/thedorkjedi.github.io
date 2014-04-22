@@ -24,9 +24,6 @@ core.dimensions.prototype.setSquares = function(){
       for( var i=0; i<(numberOfSquares * numberOfSquares); i++ ){
         sqr.push(document.createElement('div'));
         sqr[i].className = "bg-squares";
-        var style = sqr[i].style;
-        style.cssText = "width:" + widths + ";height:" + widths + ";";
-        console.log(sqr[i], style, style.cssText);
       }
 
       return sqr;
@@ -36,6 +33,9 @@ core.dimensions.prototype.setSquares = function(){
 
      for(i in sqr){
        var bg = document.getElementsByClassName('background')[0];
+
+       sqr[i].style.cssText = "width:" + widths + ";height:" + widths + ";";
+
        bg.innerHTML = "";
        bg.appendChild(sqr[i]);
      }
