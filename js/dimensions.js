@@ -23,7 +23,8 @@ core.dimensions.prototype.setSquares = function(){
 
       for( var i=0; i<(numberOfSquares * numberOfSquares); i++ ){
         sqr.push(document.createElement('div'));
-        sqr[i].className = "bg-squares";
+        // sqr[i].className = "bg-squares";
+        console.log(sqr[i].style.cssText)
         sqr[i].style.cssText = "width:" + widths + "; height:" + widths + ";";
       }
 
@@ -33,7 +34,9 @@ core.dimensions.prototype.setSquares = function(){
      var sqr = squares();
 
      for(i in sqr){
-       document.getElementsByClassName('background')[0].appendChild(sqr[i]);
+       var bg = document.getElementsByClassName('background')[0];
+       bg.innerHTML = "";
+       bg.appendChild(sqr[i]);
      }
 
      return sqr;
