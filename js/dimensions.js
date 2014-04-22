@@ -25,6 +25,8 @@ core.dimensions.prototype.setSquares = function(){
       for( var i=0; i<(numberOfSquares * numberOfSquares); i++ ){
         sqr.push(document.createElement('div'));
         sqr[i].className = className;
+        sqr[i].style.width = widths;
+        sqr[i].style.height = widths;
       }
 
       return sqr;
@@ -38,14 +40,6 @@ core.dimensions.prototype.setSquares = function(){
        bg.innerHTML = "";
        bg.appendChild(sqr[i]);
      }
-
-     var bgs = document.getElementsByClassName(className);
-
-     window.addEventListener("onDOMContentLoaded", function(){
-       for( var i=0; i<bgs.length; i++ ){
-         bgs[i].style.cssText = "width:" + widths + ";height:" + widths + ";";
-       }
-     });
 
      return sqr;
 }
