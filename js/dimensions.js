@@ -30,6 +30,6 @@ core.dimensions.prototype.setSquares = function(){
 
      var sqr = this.squares();
      for(i in sqr){
-       document.getElementsByClassName('background').appendChild(sqr[i]);
+       document.getElementsByClassName('background')[0].appendChild(sqr[i]);
      }
 }
