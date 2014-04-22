@@ -21,19 +21,18 @@ core.dimensions.prototype.setSquares = function(){
 
     var squares = function(){
       var sqr = [];
-      console.log(numberOfSquares);
 
       for( var i=0; i<(numberOfSquares * numberOfSquares); i++ ){
         sqr.push(document.createElement('div'));
         sqr[i].className = className;
         sqr[i].style.cssText = "width:" + widths + "px;" + "height:" +  widths + "px;";
+        console.log(i, sqr[i]);
       }
 
       return sqr;
     }
 
      var sqr = squares();
-
      for(i in sqr){
        var bg = document.getElementsByClassName('background')[0];
 
