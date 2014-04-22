@@ -25,7 +25,7 @@ core.dimensions.prototype.setSquares = function(){
       for( var i=0; i<(numberOfSquares * numberOfSquares); i++ ){
         sqr.push(document.createElement('div'));
         sqr[i].className = className;
-        sqr[i].setAttribute("style","width:" + widths + "px;" + "height:" +  widths + "px;");
+        sqr[i].style.cssText = "width:" + widths + "px;" + "height:" +  widths + "px;";
       }
 
       return sqr;
