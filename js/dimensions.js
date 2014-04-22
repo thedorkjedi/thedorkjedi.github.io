@@ -16,6 +16,7 @@ core.dimensions = function(){
 core.dimensions.prototype.setSquares = function(){
     var _this = this,
         numberOfSquares = 8,
+        className = "bg-squares"
         widths = (this.screen()) / numberOfSquares;
 
     var squares = function(){
@@ -23,7 +24,7 @@ core.dimensions.prototype.setSquares = function(){
 
       for( var i=0; i<(numberOfSquares * numberOfSquares); i++ ){
         sqr.push(document.createElement('div'));
-        sqr[i].className = "bg-squares";
+        sqr[i].className = className;
       }
 
       return sqr;
@@ -34,10 +35,17 @@ core.dimensions.prototype.setSquares = function(){
      for(i in sqr){
        var bg = document.getElementsByClassName('background')[0];
 
-       sqr[i].style.cssText = "width:" + widths + ";height:" + widths + ";";
-
        bg.innerHTML = "";
        bg.appendChild(sqr[i]);
+     }
+
+     var bgs = document.getElementsByClassName(className);
+
+     console.log(bgs);
+     window.bgs = bgs;
+
+     for(i in bgs){
+       bgs[i].style.cssText = "width:" + widths + ";height:" + widths + ";";
      }
 
      return sqr;
