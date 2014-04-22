@@ -1,5 +1,6 @@
 core = core || {};
 
+
 core.dimensions = function(){
   this.screen = function(){
     var dimensions = document.clientWidth ? document : document.documentElement;
@@ -11,7 +12,28 @@ core.dimensions = function(){
   }
 }
 
-core.dimensions.prototype.backgroundSquares = function(){
-    var _this = this;
-    console.log(_this.screen);
+//generate squares
+core.dimensions.prototype.setSquares = function(){
+    var _this = this,
+        numberOfSquares = 8,
+        widths = (this.screen()) / numberOfSquares;
+    this.squares = function(){
+      var sqr = [],
+      for(var i=0;i<numberOfSquares,i++){
+        sqr.push(document.createElement('div'));
+        sqr[i].className = "bg-squares";
+        sqr[i].style.cssText = "width:" + widths + "; height:" + widths + ";";
+      }
+
+      return sqr;
+    }
+
+   return {
+       setBackground: function(){
+         var sqr = this.squares;
+         for(i in sqr){
+           document.body.appendChild(sqr[i]);
+         }
+       }
+   }
 }
