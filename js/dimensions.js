@@ -41,9 +41,11 @@ core.dimensions.prototype.setSquares = function(){
 
      var bgs = document.getElementsByClassName(className);
 
-     for( var i=0; i<bgs.length; i++ ){
-       bgs[i].style.cssText = "width:" + widths + ";height:" + widths + ";";
-     }
+     window.addEventListener("onDOMContentLoaded", function(){
+       for( var i=0; i<bgs.length; i++ ){
+         bgs[i].style.cssText = "width:" + widths + ";height:" + widths + ";";
+       }
+     });
 
      return sqr;
 }
