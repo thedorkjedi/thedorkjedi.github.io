@@ -19,6 +19,8 @@ core.dimensions.prototype.setSquares = function(){
         className = "bg-squares",
         widths = (this.screen()) / numberOfSquares;
 
+        console.log(widths);
+
     var squares = function(){
       var sqr = [];
 
@@ -26,8 +28,6 @@ core.dimensions.prototype.setSquares = function(){
         sqr.push(document.createElement('div'));
         sqr[i].className = className;
         sqr[i].setAttribute("style","width:" + widths + "px;" + "height:" +  widths + "px;");
-
-        console.log(sqr[i].style.width);
       }
 
       return sqr;
