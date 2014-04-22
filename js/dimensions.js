@@ -25,7 +25,7 @@ core.dimensions.prototype.setSquares = function(){
         sqr.push(document.createElement('div'));
         // sqr[i].className = "bg-squares";
         sqr[i].style.cssText = "width:" + widths + "; height:" + widths + ";";
-        console.log(sqr[i].style.cssText);
+        console.log(sqr[i], sqr[i].style.cssText);
       }
 
       return sqr;
