@@ -26,19 +26,18 @@ core.dimensions.prototype.setSquares = function(){
         sqr.push(document.createElement('div'));
         sqr[i].className = className;
         sqr[i].style.cssText = "width:" + widths + "px;" + "height:" +  widths + "px;";
-        console.log(i, sqr[i]);
       }
 
       return sqr;
     }
 
-     var sqr = squares();
-     for(i in sqr){
-       var bg = document.getElementsByClassName('background')[0];
+    var sqr = squares();
+    bg.innerHTML = "";
 
-       bg.innerHTML = "";
-       bg.appendChild(sqr[i]);
-     }
+    for(i in sqr){
+      var bg = document.getElementsByClassName('background')[0];
+      bg.appendChild(sqr[i]);
+    }
 
-     return sqr;
+    return sqr;
 }
