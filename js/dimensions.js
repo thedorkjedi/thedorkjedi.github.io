@@ -21,6 +21,7 @@ core.dimensions.prototype.setSquares = function(){
 
     var squares = function(){
       var sqr = [];
+      console.log(numberOfSquares);
 
       for( var i=0; i<(numberOfSquares * numberOfSquares); i++ ){
         sqr.push(document.createElement('div'));
