@@ -46,3 +46,6 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+.clear{display:inline-block;}
+.clear:after{display:block;clear:both;height:0;font-size:0;line-height:0;content:".";}
+html[lang] .clear{display:block;}
