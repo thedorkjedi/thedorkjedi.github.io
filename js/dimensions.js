@@ -17,8 +17,10 @@ core.dimensions.prototype.setSquares = function(){
     var _this = this,
         numberOfSquares = 8,
         widths = (this.screen()) / numberOfSquares;
-    this.squares = function(){
+
+    var squares = function(){
       var sqr = [];
+
       for( var i=0; i<(numberOfSquares * numberOfSquares); i++ ){
         sqr.push(document.createElement('div'));
         sqr[i].className = "bg-squares";
@@ -28,8 +30,11 @@ core.dimensions.prototype.setSquares = function(){
       return sqr;
     }
 
-     var sqr = this.squares();
+     var sqr = squares();
+
      for(i in sqr){
        document.getElementsByClassName('background')[0].appendChild(sqr[i]);
      }
+
+     return sqr;
 }
