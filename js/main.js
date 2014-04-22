@@ -1,6 +1,6 @@
 core = core || {};
 
-core.home = {
+core.home = function(){
   return {
     init: function(){
 
@@ -10,4 +10,4 @@ core.home = {
   }
 }
 
-core.home.init();
+core.home().init();
