@@ -1,7 +1,5 @@
 core = core || {};
 
-core.jx = (function(){ return (window.ActiveXObject) ? new ActiveXObject("Microsoft.XMLHTTP") : (XMLHttpRequest && new XMLHttpRequest()) || null; });
-
 core.dimensions = function(){
   this.screen = function(){
     var dimensions = document.clientWidth ? document : document.documentElement;
@@ -19,6 +17,10 @@ core.dimensions.prototype.setSquares = function(){
         numberOfSquares = 5,
         className = "bg-squares",
         widths = (this.screen().width) / numberOfSquares;
+
+    jQuery.getJSON('http://api.flickr.com/services/feeds/photos_public.gne?id=112293664@N05&lang=en-us&format=json&jsoncallback=?', function (d) {
+        console.log(d.items)
+    });
 
     var squares = function(){
       var sqr = [];
