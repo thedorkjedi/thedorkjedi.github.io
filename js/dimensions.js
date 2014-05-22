@@ -41,7 +41,8 @@ core.dimensions.prototype.setSquares = function(){
 
     function setImgURLS(obj){
       jQuery.each(obj,function(id,val){
-        console.log(id,val);
+        var url = val['media']['m'];
+        console.log(jQuery(bg),url);
       });
     }
 
