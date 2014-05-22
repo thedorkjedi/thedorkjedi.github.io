@@ -16,11 +16,8 @@ core.dimensions.prototype.setSquares = function(){
     var _this = this,
         numberOfSquares = 5,
         className = "bg-squares",
-        widths = (this.screen().width) / numberOfSquares;
-
-    jQuery.getJSON('http://api.flickr.com/services/feeds/photos_public.gne?id=112293664@N05&lang=en-us&format=json&jsoncallback=?', function (d) {
-        console.log(d.items)
-    });
+        widths = (this.screen().width) / numberOfSquares,
+        imgURLs = "";
 
     var squares = function(){
       var sqr = [];
@@ -41,6 +38,16 @@ core.dimensions.prototype.setSquares = function(){
     for(i in sqr){
       bg.appendChild(sqr[i]);
     }
+
+    function setImgURLS(obj){
+      jQuery.each(obj,function(id,val){
+        console.log(id,val);
+      });
+    }
+
+    jQuery.getJSON('http://api.flickr.com/services/feeds/photos_public.gne?id=112293664@N05&lang=en-us&format=json&jsoncallback=?', function (d) {
+        setImgURLS(d.items);
+    });
 
     return sqr;
 }
