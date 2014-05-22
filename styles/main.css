@@ -16,7 +16,7 @@ h1,h2,h3,h4,h5,h6{font-family: "Domine", Rockwell, serif;font-weight:900}
 
 .background{position:absolute;height:100%;width:100%;}
 .bg-squares{ box-sizing:border-box; float:left; border: 1px solid #FFF; height:25%; width:16.66%; overflow:hidden; position:relative; }
-.bg-squares img{ height:100%; -webkit-filter:grayscale(100%); -moz-filter:grayscale(100%); filter:grayscale(100%); transition: all 0.25s; }
+.bg-squares img{ height:100%; -webkit-filter:grayscale(100%); -moz-filter:grayscale(100%); filter:grayscale(100%); transition: all 0.25s; top: 50%; left: 50%; -webkit-transform: translate(-50%,-50%); -moz-transform: translate(-50%,-50%); transform: translate(-50%,-50%); }
 .bg-squares img:hover{ -webkit-filter:grayscale(0%); -moz-filter:grayscale(0%); filter:grayscale(05%);  }
 
 @media only screen and (max-width:480px){
