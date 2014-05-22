@@ -14,7 +14,7 @@ core.dimensions = function(){
 //generate squares
 core.dimensions.prototype.setSquares = function(){
     var _this = this,
-        numberOfSquares = 4,
+        numberOfSquares = 24,
         className = "bg-squares",
         widths = (this.screen().width) / numberOfSquares,
         imgURLs = "";
@@ -22,7 +22,7 @@ core.dimensions.prototype.setSquares = function(){
     var squares = function(){
       var sqr = [];
 
-      for( var i=0; i<(numberOfSquares * numberOfSquares); i++ ){
+      for( var i=0; i<24; i++ ){
         sqr.push(document.createElement('div'));
         sqr[i].className = className;
       }
