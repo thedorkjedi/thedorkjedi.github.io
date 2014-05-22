@@ -1,5 +1,5 @@
 /* main */
-html,body{background:#e6e7e8;background:rgba(230,231,232,1);color:#231f20;position:relative;}
+html,body{background:#e6e7e8;background:rgba(230,231,232,1);color:#231f20;position:relative;height:100%;}
 body{line-height:1;position:relative;font:10px/1 "PT Sans";font-family:"PT Sans", "Arial", "Helvetica", "Lucida Grande", "Gill Sans", "Verdana", sans-serif; font-size: 1.000em;}
 
 .header{position: absolute;display: block;width: 29rem;height: 11.5rem; z-index: 10}
@@ -14,7 +14,7 @@ h1,h2,h3,h4,h5,h6{font-family: "Domine", Rockwell, serif;font-weight:900}
 
 .regular-content{font-size:.7rem;padding:.7rem;width:8rem;background:#a7a9ac;background:rgba(167,169,172,.1);box-shadow:-3px 2px 4px rgba(0,0,0,.3);color:#666;background:#FFF;}
 
-.background{position:absolute;}
+.background{position:absolute;height:100%;}
 .bg-squares{ box-sizing:border-box; float:left; border: 1px solid #CCC; transition: all .5s; height:12.5%;width:12.5%;}
 .bg-squares:hover{ background:#868686;border-color:#231f20; }
 
