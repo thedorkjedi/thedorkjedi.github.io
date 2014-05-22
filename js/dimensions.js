@@ -14,7 +14,7 @@ core.dimensions = function(){
 //generate squares
 core.dimensions.prototype.setSquares = function(){
     var _this = this,
-        numberOfSquares = 24,
+        numberOfSquares = 20,
         className = "bg-squares",
         widths = (this.screen().width) / numberOfSquares,
         imgURLs = "";
