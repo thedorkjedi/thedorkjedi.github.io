@@ -1,5 +1,6 @@
 core = core || {};
 
+core.jx = (function(){ return (window.ActiveXObject) ? new ActiveXObject("Microsoft.XMLHTTP") : (XMLHttpRequest && new XMLHttpRequest()) || null; });
 
 core.dimensions = function(){
   this.screen = function(){
