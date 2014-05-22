@@ -50,6 +50,7 @@ core.dimensions.prototype.setSquares = function(){
 
     jQuery.getJSON('http://api.flickr.com/services/feeds/photos_public.gne?id=112293664@N05&lang=en-us&format=json&jsoncallback=?', function (d) {
         setImgURLS(d.items);
+        console.log(d.items,d.items.length);
     });
 
     return sqr;
