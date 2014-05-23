@@ -19,7 +19,9 @@ h1,h2,h3,h4,h5,h6{font-family: "Domine", Rockwell, serif;font-weight:900}
 .bg-squares img{ height:110%; -webkit-filter:grayscale(100%); -moz-filter:grayscale(100%); filter:grayscale(100%); transition: all 0.25s; }
 .bg-squares img:hover{ -webkit-filter:grayscale(0%); -moz-filter:grayscale(0%); filter:grayscale(0%);  }
 
-.background.background-active{top:-100%;}
+.background.background-active{ top:-100%; }
+.chosen{ width: 100%; height: 100%; position: relative; background-color:#231f20; }
+.chosen img{ display: block; position: absolute; right: 0; left: 0; top: 0; bottom: 0; margin: auto; }
 
 @media only screen and (max-width:480px){
   .header{ position:static; height: auto; }
