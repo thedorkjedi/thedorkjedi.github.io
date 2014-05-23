@@ -9,15 +9,6 @@ core.insta = function(){
   };
 }
 
-core.insta.prototype.bindEvents = function(){
-  var obj = this.objects;
-
-  (function($,w){
-    $(obj.elements).click(this.frameEvents.runEvents);
-    $(obj.frame).click(this.frameEvents.turnBackEvents);
-  })(jQuery,window);
-}
-
 core.insta.prototype.frameEvents = {
   runEvents: function (event){
     event.preventDefault();
@@ -37,4 +28,13 @@ core.insta.prototype.frameEvents = {
     obj['background'].removeClass(obj.activeClass);
     obj['frame'].addClass(obj.activeClass);
   }
+}
+
+core.insta.prototype.bindEvents = function(){
+  var obj = this.objects;
+
+  (function($,w){
+    $(obj.elements).click(this.frameEvents.runEvents);
+    $(obj.frame).click(this.frameEvents.turnBackEvents);
+  })(jQuery,window);
 }
