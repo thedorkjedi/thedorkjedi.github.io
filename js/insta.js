@@ -21,6 +21,7 @@ core.insta.prototype.bindEvents = function(){
 
 		obj['background'].addClass(obj.activeClass);
 		obj['frame'].html(insertedImg);
+		obj['frame'].removeClass(obj.activeClass);
 
 	}
 
@@ -28,7 +29,7 @@ core.insta.prototype.bindEvents = function(){
 		event.preventDefault();
 
 		obj['background'].removeClass(obj.activeClass);
-		obj['frame'].empty();
+		obj['frame'].addClass(obj.activeClass);
 	}
 
 	(function($,w){
