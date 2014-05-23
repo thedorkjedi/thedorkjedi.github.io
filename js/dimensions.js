@@ -32,7 +32,7 @@ core.dimensions.prototype.setSquares = function(){
       jQuery.each(obj,function(id,val){
         var url = val['media']['m'];
         var img = jQuery('<img>',{ 'src': url });
-
+        console.log('sdq',jQuery(_this.squareClass));
         jQuery(_this.squareClass).eq(id).append(img);
       });
     }
