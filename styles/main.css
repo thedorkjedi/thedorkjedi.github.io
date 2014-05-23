@@ -45,7 +45,7 @@ a.minimize-header{background: #A83838;background: #A83838;top: -1rem;right: 0.4r
 .header.minimized a.minimize-header{display:none;}
 .header.minimized .heading-details{width:26.5rem;padding-bottom:0.5rem;}
 .header.minimized .regular-content{display:none;padding:0.5rem 0.5rem 0 .5rem;}
-.header.minimized .mini-title{display: block;float: left;font-size: 1rem;line-height: 3.125;font-weight: 800;text-decoration: underline;}
+.header.minimized .mini-title{display: block;float: left;font-size: 1rem;line-height: 3.125;font-weight: 800;text-decoration: underline;cursor: pointer;}
 .header.minimized .regular-content.center{display: block;float: left;width: auto;padding-right: 0;}
 .header.minimized .regular-content.center img{ width:3.125rem; display:block; }
 .header.minimized .contact{padding: 0;height: 4.125rem;width: 16.5rem;right: -0.6rem;top: -.1rem;}
