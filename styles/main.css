@@ -54,6 +54,3 @@ a.minimize-header{background: #A83838;background: #A83838;top: -1rem;right: 0.4r
 @media screen and (max-width: 1750px){
   .bg-squares img{ height:130%; }
 }
-
-.test:before{content:\f099;font-size:3rem;color:#000;display:block;width:100%;font-size:5rem;line-height:1;position:absolute;z-index: 999}
-.test:after{content:\f099;font-size:3rem;color:#fff;display:block;width:100%;font-size:5rem;line-height:1;position:absolute;z-index: 9999}
