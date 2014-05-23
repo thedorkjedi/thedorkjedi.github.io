@@ -3,7 +3,7 @@ core = core || {};
 core.home = function(){
   return {
     init: function(){
-      console && console.log ? console.log("thedorkjedi - github version 1.00");
+      console && console.log ? console.log("thedorkjedi - github version 1.00") : window.log("thedorkjedi - github version 1.00");
       //set background
       var background = new core.dimensions();
       background.setSquares();
