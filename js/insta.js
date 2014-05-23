@@ -3,7 +3,7 @@ core = core || {};
 core.insta = function(){
   this.objects = {
     elements: jQuery('.bg-squares'),
-    minimizer: jQuery('.minimize-header'),
+    minimizer: jQuery('.minimize-header,.mini-title'),
     background: jQuery('.background'),
     header: jQuery('.header'),
     frame: jQuery('.chosen'),
@@ -38,10 +38,12 @@ core.insta.prototype.frameEvents = function(){
       event.preventDefault();
 
       var self = jQuery(this);
-      obj['header'].hasClass(obj.minimizeClass) ? obj['header'].removeClass(obj.minimizeClass) : obj['header'].addClass(obj.minimizeClass);
-    },
-    maximize: function(event){
-      
+      if(self.hasClass('minimize-header')){
+        obj['header'].hasClass(obj.minimizeClass) ? obj['header'].removeClass(obj.minimizeClass) : obj['header'].addClass(obj.minimizeClass);
+      }
+      if(self.hasClass('mini-title')){
+        obj['header'].removeClass(obj.minimizeClass);
+      }
     }
   }
 
