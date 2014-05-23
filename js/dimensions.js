@@ -33,7 +33,7 @@ core.dimensions.prototype.setSquares = function(){
         var url = val['media']['m'];
         var img = jQuery('<img>',{ 'src': url });
 
-        jQuery('.bg-squares').eq(id).append(img);
+        jQuery(_this.squareClass).eq(id).append(img);
       });
     }
 
