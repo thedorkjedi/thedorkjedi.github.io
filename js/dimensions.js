@@ -1,15 +1,36 @@
 core = core || {};
 
 core.dimensions = function(){
-  this.screen = function(){
-    var dimensions = document.clientWidth ? document : document.documentElement;
+  this.getImgURLs = function(url){
+    var obj;
+    jQuery.getJSON(url, function (d) {
+      obj = d.items;
+    });
+    return obj;
+  }
+}
 
-    return {
-      width: dimensions.clientWidth,
-      height: dimensions.clientHeight
+//generate background
+core.dimensions.prototype.setBackground = function(){
+
+  var _self = this;
+
+  function setImgURLS(obj){
+    jQuery.each(obj,function(id,val){
+      var url = val['media']['m'];
+      var img = jQuery('<img>',{ 'src': url });
+
+      jQuery('.bg-squares').eq(id).append(img);
+    });
+  }
+
+  return {
+    init: function(){
+      setImgURLS(_self.getImgURLs('http://api.flickr.com/services/feeds/photos_public.gne?id=112293664@N05&lang=en-us&&display_all=1&format=json&jsoncallback=?'));
     }
   }
 }
+
 
 //generate squares
 core.dimensions.prototype.setSquares = function(){
@@ -38,18 +59,8 @@ core.dimensions.prototype.setSquares = function(){
       bg.appendChild(sqr[i]);
     }
 
-    function setImgURLS(obj){
-      jQuery.each(obj,function(id,val){
-        var url = val['media']['m'];
-        var img = jQuery('<img>',{ 'src': url });
-
-        jQuery('.bg-squares').eq(id).append(img);
-      });
-    }
-
-    jQuery.getJSON('http://api.flickr.com/services/feeds/photos_public.gne?id=112293664@N05&lang=en-us&&display_all=1&format=json&jsoncallback=?', function (d) {
-      setImgURLS(d.items);
-    });
+    var setBg = this.setBackground();
+    setBg.init();
 
     return sqr;
 }
