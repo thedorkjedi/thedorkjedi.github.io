@@ -1,9 +1,9 @@
 core = core || {};
 
 core.dimensions = function(){
-  this.getImgURLs = function(url){
+  this.getImgURLs = function(url,$){
     var obj;
-    jQuery.getJSON(url, function (d) {
+    $.getJSON(url, function (d) {
       obj = d.items;
     });
     return obj;
@@ -46,7 +46,7 @@ core.dimensions.prototype.setSquares = function(){
       });
     }
 
-    setImgURLS(this.getImgURLs('http://api.flickr.com/services/feeds/photos_public.gne?id=112293664@N05&lang=en-us&&display_all=1&format=json&jsoncallback=?'));
+    setImgURLS(this.getImgURLs('http://api.flickr.com/services/feeds/photos_public.gne?id=112293664@N05&lang=en-us&&display_all=1&format=json&jsoncallback=?',jQuery));
 
     return sqr;
 }
