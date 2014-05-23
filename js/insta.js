@@ -20,7 +20,7 @@ core.insta.prototype.bindEvents = function(){
 			insertedImg = jQuery('<img>',{ 'src': imgSrc.replace('_m.jpg','_b.jpg') });
 
 		obj['background'].addClass(obj.activeClass);
-		obj['frame'].empty().append(insertedImg);
+		obj['frame'].html(insertedImg);
 
 	}
 
