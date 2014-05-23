@@ -3,6 +3,7 @@ core = core || {};
 core.insta = function(){
   this.objects = {
     elements: jQuery('.bg-squares'),
+    minimizer: jQuery('.minimize-header'),
     background: jQuery('.background'),
     header: jQuery('.header'),
     frame: jQuery('.chosen'),
@@ -33,6 +34,12 @@ core.insta.prototype.frameEvents = function(){
       obj['background'].removeClass(obj.activeClass);
       obj['header'].removeClass(obj.activeClass);
       obj['frame'].addClass(obj.activeClass);
+    },
+    minimize: function(event){
+      event.preventDefault();
+
+      var self = jQuery(this);
+      obj['header'].addClass('minimized');
     }
   }
 }
@@ -42,6 +49,7 @@ core.insta.prototype.bindEvents = function(){
       evt = this.frameEvents();
 
   (function($,w){
+    $(obj.minimizer).click(evt.minimize);
     $(obj.elements).click(evt.runEvents);
     $(obj.frame).click(evt.turnBackEvents);
   })(jQuery,window);
