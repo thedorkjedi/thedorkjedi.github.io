@@ -4,6 +4,7 @@ core.insta = function(){
   this.objects = {
     elements: jQuery('.bg-squares'),
     background: jQuery('.background'),
+    header: jQuery('.header'),
     frame: jQuery('.chosen'),
     activeClass: 'background-active'
   };
@@ -21,6 +22,7 @@ core.insta.prototype.frameEvents = function(){
           insertedImg = jQuery('<img>',{ 'src': imgSrc.replace('_m.jpg','_z.jpg') });
 
       obj['background'].addClass(obj.activeClass);
+      obj['header'].addClass(obj.activeClass);
       obj['frame'].html(insertedImg);
       obj['frame'].removeClass(obj.activeClass);
 
@@ -29,6 +31,7 @@ core.insta.prototype.frameEvents = function(){
       event.preventDefault();
 
       obj['background'].removeClass(obj.activeClass);
+      obj['header'].removeClass(obj.activeClass);
       obj['frame'].addClass(obj.activeClass);
     }
   }
