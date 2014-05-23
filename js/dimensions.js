@@ -3,11 +3,11 @@ core = core || {};
 core.dimensions = function(){
   this.squareClass = "bg-squares";
   this.numberOfSquares = 20;
-  this.squares = function(){
+  this.squares = function(element, sqrs){
     var sqr = [];
 
-    for( var i=0; i<this.numberOfSquares; i++ ){
-      sqr.push(document.createElement('div'));
+    for( var i=0; i<sqrs; i++ ){
+      sqr.push(document.createElement(element));
       sqr[i].className = this.squareClass;
     }
 
@@ -19,7 +19,7 @@ core.dimensions = function(){
 core.dimensions.prototype.setSquares = function(){
     var _this = this;
 
-    var sqr = _this.squares();
+    var sqr = _this.squares('div',_this.numberOfSquares);
     var bg = document.getElementsByClassName('background')[0];
 
     bg.innerHTML = "";
