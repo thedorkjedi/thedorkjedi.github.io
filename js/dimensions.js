@@ -1,34 +1,25 @@
 core = core || {};
 
 core.dimensions = function(){
-  this.getImgURLs = function(url,$){
-    var obj;
-    $.getJSON(url, function (d) {
-      obj = d.items;
-    });
-    return obj;
-  }
+  this.squareClass = "bg-squares";
+  this.numberOfSquares = 20;
+  this.squares = function(){
+    var sqr = [],        
+
+    for( var i=0; i<this.numberOfSquares; i++ ){
+      sqr.push(document.createElement('div'));
+      sqr[i].className = this.squareClass;
+    }
+
+    return sqr;
+  };
 }
 
 //generate squares
 core.dimensions.prototype.setSquares = function(){
-    var _this = this,
-        numberOfSquares = 20,
-        className = "bg-squares",
-        imgURLs = "";
+    var _this = this;
 
-    var squares = function(){
-      var sqr = [];
-
-      for( var i=0; i<numberOfSquares; i++ ){
-        sqr.push(document.createElement('div'));
-        sqr[i].className = className;
-      }
-
-      return sqr;
-    }
-
-    var sqr = squares();
+    var sqr = _this.squares();
     var bg = document.getElementsByClassName('background')[0];
 
     bg.innerHTML = "";
@@ -46,7 +37,9 @@ core.dimensions.prototype.setSquares = function(){
       });
     }
 
-    setImgURLS(this.getImgURLs('http://api.flickr.com/services/feeds/photos_public.gne?id=112293664@N05&lang=en-us&&display_all=1&format=json&jsoncallback=?',jQuery));
+    jQuery.getJSON('http://api.flickr.com/services/feeds/photos_public.gne?id=112293664@N05&lang=en-us&&display_all=1&format=json&jsoncallback=?', function (d) {
+      setImgURLS(d.items);
+    });
 
     return sqr;
 }
