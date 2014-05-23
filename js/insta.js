@@ -25,7 +25,6 @@ core.insta.prototype.frameEvents = function(){
       obj['background'].addClass(obj.activeClass);
       obj['header'].addClass(obj.activeClass);
       obj['frame'].html(insertedImg);
-      obj['frame'].removeClass(obj.activeClass);
 
     },
     turnBackEvents: function(event){
@@ -33,7 +32,6 @@ core.insta.prototype.frameEvents = function(){
 
       obj['background'].removeClass(obj.activeClass);
       obj['header'].removeClass(obj.activeClass);
-      obj['frame'].addClass(obj.activeClass);
     },
     minimize: function(event){
       event.preventDefault();
