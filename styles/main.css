@@ -39,7 +39,7 @@ a.minimize-header{background: #A83838;background: #A83838;top: -1rem;right: 0.4r
 .chosen{ width: 100%; height: 100%; position: relative; background-color:#a7a9ac; bottom: 0; box-shadow: inset 0px 0px 8px rgba(0,0,0,1); transition: all 1s; }
 .chosen img{ display: block; position: absolute; right: 0; left: 0; top: 0; bottom: 0; margin: auto; box-shadow: 0px 4px 16px rgba(0,0,0,.75); border-radius: 16px; cursor: pointer; }
 
-.header.minimized{margin:0 auto;width:26.5rem;height: 4.2rem;box-shadow: 2px 2px 3px rgba(0,0,0,.5);}
+.header.minimized{margin:0 auto;width:26.5rem;height: 4.1rem;box-shadow: 2px 2px 3px rgba(0,0,0,.75);}
 .header.minimized .title-heading{display:none;}
 .header.minimized .drag-handle{display: block;position: absolute;width: 2.625rem;background: #A83838;left: -2.625rem;text-align: center;vertical-align: middle;line-height: 1;top: .7rem;color: #FFF;border-radius: 50% 0 0 50%;font-size: 1.4rem;padding: 0.613rem 0;cursor:move;cursor:-webkit-grab;cursor:-moz-grab;}
 .header.minimized a.minimize-header{display:none;}
@@ -48,7 +48,7 @@ a.minimize-header{background: #A83838;background: #A83838;top: -1rem;right: 0.4r
 .header.minimized .mini-title{display: block;float: left;font-size: 1rem;line-height: 3.125;font-weight: 800;text-decoration: underline;cursor: pointer;}
 .header.minimized .regular-content.center{display: block;float: left;width: auto;padding-right: 0;}
 .header.minimized .regular-content.center img{ width:3.125rem; display:block; }
-.header.minimized .contact{padding: 0;height: 4.1rem;width: 16.5rem;right: -0.6rem;top: 0rem;overflow: hidden;}
+.header.minimized .contact{padding: 0;height: 4.1rem;width: 16.5rem;right: -0.6rem;top: 0rem;overflow: hidden;box-shadow: none;}
 .header.minimized .contact li{float: left;height: 4.125rem;margin: 0;box-shadow: none;width: 4.125rem;}
 .header.minimized .contact a{text-align: center;vertical-align: middle;padding: 1.2rem 0.4rem;}
 .header.minimized .contact a .text{display:none;}
