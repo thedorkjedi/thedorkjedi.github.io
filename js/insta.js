@@ -39,6 +39,9 @@ core.insta.prototype.frameEvents = function(){
 
       var self = jQuery(this);
       obj['header'].hasClass(obj.minimizeClass) ? obj['header'].removeClass(obj.minimizeClass) : obj['header'].addClass(obj.minimizeClass);
+    },
+    maximize: function(event){
+      
     }
   }
 
