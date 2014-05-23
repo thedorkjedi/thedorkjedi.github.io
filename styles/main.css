@@ -31,5 +31,5 @@ h1,h2,h3,h4,h5,h6{font-family: "Domine", Rockwell, serif;font-weight:900}
 }
 
 @media screen and (max-width: 1750px){
-	.bg-squares img{ height:100%; }
+	.bg-squares img{ height:130%; }
 }
