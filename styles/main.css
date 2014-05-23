@@ -38,7 +38,7 @@ a.minimize-header{background: #A83838;background: #A83838;top: -1rem;right: 0.4r
 
 .header.minimized{margin:0 auto;}
 .header.minimized .title-heading{display:none;}
-.header.minimized ..heading-details{width:14rem;padding-bottom:0.5rem;}
+.header.minimized .heading-details{width:14rem;padding-bottom:0.5rem;}
 .header.minimized .regular-content{display:none;padding:0.5rem 0.5rem 0 .5rem;}
 .header.minimized .mini-title{display: block;float: right;font-size: 1rem;line-height: 3.125;font-weight: 800;}
 .header.minimized .regular-content.center{display: block;float: left;width: auto;padding-right: 0;}
