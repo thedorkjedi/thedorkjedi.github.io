@@ -9,32 +9,35 @@ core.insta = function(){
   };
 }
 
-core.insta.prototype.frameEvents = {
-  runEvents: function (event){
-    event.preventDefault();
+core.insta.prototype.frameEvents = function(){
+  return {
+    runEvents: function (event){
+      event.preventDefault();
 
-    var self = jQuery(this),
-        imgSrc = self.find('img').prop('src'),
-        insertedImg = jQuery('<img>',{ 'src': imgSrc.replace('_m.jpg','_z.jpg') });
+      var self = jQuery(this),
+          imgSrc = self.find('img').prop('src'),
+          insertedImg = jQuery('<img>',{ 'src': imgSrc.replace('_m.jpg','_z.jpg') });
 
-    obj['background'].addClass(obj.activeClass);
-    obj['frame'].html(insertedImg);
-    obj['frame'].removeClass(obj.activeClass);
+      obj['background'].addClass(obj.activeClass);
+      obj['frame'].html(insertedImg);
+      obj['frame'].removeClass(obj.activeClass);
 
-  },
-  turnBackEvents: function(event){
-    event.preventDefault();
+    },
+    turnBackEvents: function(event){
+      event.preventDefault();
 
-    obj['background'].removeClass(obj.activeClass);
-    obj['frame'].addClass(obj.activeClass);
+      obj['background'].removeClass(obj.activeClass);
+      obj['frame'].addClass(obj.activeClass);
+    }
   }
 }
 
 core.insta.prototype.bindEvents = function(){
-  var obj = this.objects;
+  var obj = this.objects,
+      evt = this.frameEvents();
 
   (function($,w){
-    $(obj.elements).click(this.frameEvents.runEvents);
-    $(obj.frame).click(this.frameEvents.turnBackEvents);
+    $(obj.elements).click(evt.runEvents);
+    $(obj.frame).click(evt.turnBackEvents);
   })(jQuery,window);
 }
