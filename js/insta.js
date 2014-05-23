@@ -10,6 +10,8 @@ core.insta = function(){
 }
 
 core.insta.prototype.frameEvents = function(){
+  var obj = this.objects;
+
   return {
     runEvents: function (event){
       event.preventDefault();
