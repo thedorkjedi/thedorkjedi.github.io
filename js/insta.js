@@ -3,6 +3,7 @@ core = core || {};
 core.insta = function(){
   this.objects = {
     elements: jQuery('.bg-squares'),
+    draggable: jQuery('.drag-handle'),
     minimizer: jQuery('.minimize-header,.mini-title'),
     background: jQuery('.background'),
     header: jQuery('.header'),
@@ -62,5 +63,6 @@ core.insta.prototype.bindEvents = function(){
     $(obj.minimizer).click(evt.minimize);
     $(obj.elements).click(evt.runEvents);
     $(obj.frame).on('click','img',evt.turnBackEvents);
+    $(obj.draggable).drags();
   })(jQuery,window);
 }
