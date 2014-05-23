@@ -30,11 +30,12 @@ core.dimensions.prototype.setSquares = function(){
 
     function setImgURLS(obj){
       var sqr = _this.squareClass;
-
+      window.arr = [];
       jQuery.each(obj,function(id,val){
         var url = val['media']['m'];
         var img = jQuery('<img>',{ 'src': url });
-
+        console.log(img);
+        arr.push(img);
         jQuery(sqr).eq(id).append(jQuery(img));
       });
     }
