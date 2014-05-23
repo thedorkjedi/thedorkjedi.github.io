@@ -2,7 +2,7 @@
 html,body{background:#e6e7e8;background:rgba(230,231,232,1);color:#231f20;position:relative;height:100%;width:100%; overflow: hidden; }
 body{line-height:1;position:relative;font:10px/1 "PT Sans";font-family:"PT Sans", "Arial", "Helvetica", "Lucida Grande", "Gill Sans", "Verdana", sans-serif; font-size: 1.000em; min-width: 320px; min-height: 480px; }
 
-.header{ position: absolute;display: block;width: 21.5rem;height: 17rem; z-index: 10; margin: auto; top: 0; left: 0; right: 0; bottom: 0; opacity: 1; }
+.header{ position: absolute;display: block;width: 21.5rem;height: 17rem; z-index: 10; margin: auto; top: 0; left: 0; right: 0; bottom: 0; opacity: 1; box-shadow: none;}
 
 h1,h2,h3,h4,h5,h6{font-family: "Domine", Rockwell, serif;font-weight:900}
 .float-left{ float:left; }
@@ -39,16 +39,16 @@ a.minimize-header{background: #A83838;background: #A83838;top: -1rem;right: 0.4r
 .chosen{ width: 100%; height: 100%; position: relative; background-color:#a7a9ac; bottom: 0; box-shadow: inset 0px 0px 8px rgba(0,0,0,1); transition: all 1s; }
 .chosen img{ display: block; position: absolute; right: 0; left: 0; top: 0; bottom: 0; margin: auto; box-shadow: 0px 4px 16px rgba(0,0,0,.75); border-radius: 16px; cursor: pointer; }
 
-.header.minimized{margin:0 auto;width:26.5rem;height: 4.2rem;}
+.header.minimized{margin:0 auto;width:26.5rem;height: 4.2rem;box-shadow: 2px 2px 3px rgba(0,0,0,.5);}
 .header.minimized .title-heading{display:none;}
 .header.minimized .drag-handle{display: block;position: absolute;width: 2.625rem;background: #A83838;left: -2.625rem;text-align: center;vertical-align: middle;line-height: 1;top: .7rem;color: #FFF;border-radius: 50% 0 0 50%;font-size: 1.4rem;padding: 0.613rem 0;cursor:move;cursor:-webkit-grab;cursor:-moz-grab;}
 .header.minimized a.minimize-header{display:none;}
-.header.minimized .heading-details{width:26.5rem;padding-bottom:0.5rem;}
+.header.minimized .heading-details{width:26.5rem;padding-bottom:0.5rem;box-shadow: none;}
 .header.minimized .regular-content{display:none;padding:0.5rem 0.5rem 0 .5rem;}
 .header.minimized .mini-title{display: block;float: left;font-size: 1rem;line-height: 3.125;font-weight: 800;text-decoration: underline;cursor: pointer;}
 .header.minimized .regular-content.center{display: block;float: left;width: auto;padding-right: 0;}
 .header.minimized .regular-content.center img{ width:3.125rem; display:block; }
-.header.minimized .contact{padding: 0;height: 4.125rem;width: 16.5rem;right: -0.6rem;top: -.1rem;}
+.header.minimized .contact{padding: 0;height: 4.1rem;width: 16.5rem;right: -0.6rem;top: 0rem;overflow: hidden;}
 .header.minimized .contact li{float: left;height: 4.125rem;margin: 0;box-shadow: none;width: 4.125rem;}
 .header.minimized .contact a{text-align: center;vertical-align: middle;padding: 1.2rem 0.4rem;}
 .header.minimized .contact a .text{display:none;}
