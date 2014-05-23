@@ -33,6 +33,7 @@ core.insta.prototype.frameEvents = function(){
       event.preventDefault();
 
       obj['background'].removeClass(obj.activeClass);
+      obj['header'].removeAttr('style');
       obj['header'].removeClass(obj.activeClass);
     },
     minimize: function(event){
