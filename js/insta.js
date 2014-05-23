@@ -27,7 +27,7 @@ core.insta.prototype.frameEvents = function(){
       obj['background'].addClass(obj.activeClass);
       !(obj['header'].hasClass(obj.minimizeClass)) ? obj['header'].find('.minimize-header').trigger('click') : "";
       obj['frame'].html(insertedImg);
-
+      obj['header'].hasClass(obj.minimizeClass) ? jQuery(obj.header).drags(obj.draggable) : "";
     },
     turnBackEvents: function(event){
       event.preventDefault();
@@ -42,14 +42,13 @@ core.insta.prototype.frameEvents = function(){
 
       var self = jQuery(this);
 
-      $(obj.header).drags(obj.draggable);
+      jQuery(obj.header).drags(obj.draggable);
 
       if(self.hasClass('minimize-header')){
         obj['header'].hasClass(obj.minimizeClass) ? obj['header'].removeClass(obj.minimizeClass) : obj['header'].addClass(obj.minimizeClass);
       }
       if(self.hasClass('mini-title')){
         if(!obj['background'].hasClass(obj.activeClass)){
-          obj['header'].removeAttr('style');
           obj['header'].removeClass(obj.minimizeClass);
           obj['header'].off();
         } else {
