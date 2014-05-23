@@ -45,6 +45,7 @@ core.insta.prototype.frameEvents = function(){
       }
       if(self.hasClass('mini-title')){
         if(!obj['background'].hasClass(obj.activeClass)){
+          obj['header'].removeAttr('style');
           obj['header'].removeClass(obj.minimizeClass);
         } else {
           obj['frame'].find('img').trigger('click');
