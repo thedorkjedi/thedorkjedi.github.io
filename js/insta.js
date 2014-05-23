@@ -51,6 +51,6 @@ core.insta.prototype.bindEvents = function(){
   (function($,w){
     $(obj.minimizer).click(evt.minimize);
     $(obj.elements).click(evt.runEvents);
-    $(obj.frame).on('img','click',evt.turnBackEvents);
+    $(obj.frame).on('click','img',evt.turnBackEvents);
   })(jQuery,window);
 }
