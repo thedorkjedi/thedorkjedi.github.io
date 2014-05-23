@@ -29,14 +29,13 @@ core.dimensions.prototype.setSquares = function(){
     }
 
     function setImgURLS(obj){
+      var sqr = _this.squareClass;
+
       jQuery.each(obj,function(id,val){
         var url = val['media']['m'];
         var img = jQuery('<img>',{ 'src': url });
 
-        console.log(jQuery(_this.squareClass).eq(id));
-
-        jQuery(_this.squareClass).eq(id).append(jQuery(img));
-
+        jQuery(sqr).eq(id).append(jQuery(img));
       });
     }
 
