@@ -10,7 +10,7 @@ core.home = function(){
 
       //set events
       var events = new core.insta();
-      events.bindEvents();
+      // events.bindEvents();
     }
   }
 }
