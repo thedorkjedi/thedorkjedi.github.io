@@ -2,7 +2,7 @@
 html,body{background:#e6e7e8;background:rgba(230,231,232,1);color:#231f20;position:relative;height:100%;width:100%; overflow: hidden; }
 body{line-height:1;position:relative;font:10px/1 "PT Sans";font-family:"PT Sans", "Arial", "Helvetica", "Lucida Grande", "Gill Sans", "Verdana", sans-serif; font-size: 1.000em; min-width: 320px; min-height: 480px; }
 
-.header{ position: absolute;display: block;width: 24rem;height: 20.8rem; z-index: 10; margin: auto; top: 0; left: 0; right: 0; bottom: 0; opacity: 1; transition: all 1s; }
+.header{ position: absolute;display: block;width: 24rem;height: 17rem; z-index: 10; margin: auto; top: 0; left: 0; right: 0; bottom: 0; opacity: 1; transition: all 1s; }
 
 h1,h2,h3,h4,h5,h6{font-family: "Domine", Rockwell, serif;font-weight:900}
 .float-left{ float:left; }
@@ -13,7 +13,7 @@ h1,h2,h3,h4,h5,h6{font-family: "Domine", Rockwell, serif;font-weight:900}
 
 .title-heading{ font-size:2.4rem;width:10rem;color:#fff;text-shadow:2px 4px 8px rgba(0,0,0,.75);z-index:100;text-align:right;margin:1rem; }
 .subtitle-heading{ font-size:1.2rem;padding:.7rem;background:#58595b;background:rgba(88,89,91,1);width:8rem;color:#fff;z-index:100;cursor:default;text-decoration:underline; }
-.heading-details{background: #231f20;width:12rem;padding-bottom:1rem;}
+.heading-details{background: #231f20;width:12rem;padding-bottom:1rem;box-shadow: 2px 2px 3px rgba(0,0,0,.5);}
 .link-heading{ background:#808285;background:rgba(128,130,133,1);font-size:.8rem;color:#EFEFEF;width:8rem;padding:.8rem 0.7rem;z-index:90;box-shadow:inset 0px 1px 2px rgba(0,0,0,.2); }
 .link-heading a{ color:#FFF; }
 
@@ -25,7 +25,7 @@ h1,h2,h3,h4,h5,h6{font-family: "Domine", Rockwell, serif;font-weight:900}
 .bg-squares img{ height:110%; -webkit-filter:grayscale(100%); -moz-filter:grayscale(100%); filter:grayscale(100%); transition: all 0.25s; }
 .bg-squares img:hover{ -webkit-filter:grayscale(0%); -moz-filter:grayscale(0%); filter:grayscale(0%);  }
 
-a.minimize-header,.contact{position: absolute;}
+a.minimize-header,.contact{position: absolute;top: 0;right: -4rem;}
 
 .background.background-active{ top:-100%; }
 .chosen{ width: 100%; height: 100%; position: relative; background-color:#a7a9ac; bottom: 0; box-shadow: inset 0px 0px 8px rgba(0,0,0,1); transition: all 1s; }
