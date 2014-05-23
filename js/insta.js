@@ -19,11 +19,9 @@ core.insta.prototype.frameEvents = function(){
     runEvents: function (event){
       event.preventDefault();
 
-      console.log(jQuery(this).find('img').prop('src'));
-
       var self = jQuery(this),
           imgSrc = self.find('img').prop('src'),
-          insertedImg = jQuery('<img>',{ 'src': ((imgSrc).toString()).replace('_m.jpg','_z.jpg') });
+          insertedImg = jQuery('<img>',{ 'src': imgSrc.replace('_m.jpg','_z.jpg') });
 
       obj['background'].addClass(obj.activeClass);
       !(obj['header'].hasClass(obj.minimizeClass)) ? obj['header'].addClass(obj.activeClass) : "";
