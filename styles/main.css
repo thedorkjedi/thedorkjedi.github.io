@@ -37,8 +37,10 @@ a.minimize-header{background: #A83838;background: #A83838;top: -1rem;right: 0.4r
 .chosen img{ display: block; position: absolute; right: 0; left: 0; top: 0; bottom: 0; margin: auto; box-shadow: 0px 4px 16px rgba(0,0,0,.75); border-radius: 16px; cursor: pointer; }
 
 .header.minimized{margin:0 auto;}
-.header.minimized .mini-title{display:block;}
 .header.minimized .title-heading{display:none;}
+.header.minimized .regular-content{display:none;}
+.header.minimized .mini-title{display:block;}
+.header.minimized .regular-content.center img{ width:3.125rem; display:block; }
 
 @media only screen and (max-width:480px){
   .header{ position:static; height: auto; }
