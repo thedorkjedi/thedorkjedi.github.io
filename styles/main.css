@@ -38,9 +38,10 @@ a.minimize-header{background: #A83838;background: #A83838;top: -1rem;right: 0.4r
 
 .header.minimized{margin:0 auto;}
 .header.minimized .title-heading{display:none;}
+.header.minimized ..heading-details{width:13rem;}
 .header.minimized .regular-content{display:none;}
-.header.minimized .mini-title{display:block;}
-.header.minimized .regular-content.center{display:block;}
+.header.minimized .mini-title{display: block;float: right;font-size: 1rem;line-height: 3.125;font-weight: 800;}
+.header.minimized .regular-content.center{display: block;float: left;width: auto;padding-right: 0;}
 .header.minimized .regular-content.center img{ width:3.125rem; display:block; }
 
 @media only screen and (max-width:480px){
