@@ -9,7 +9,7 @@ core.insta = function(){
 	};
 }
 
-core.prototype.bindEvents = function(){
+core.insta.prototype.bindEvents = function(){
 	var obj = this.objects;
 
 	function runEvents(event){
