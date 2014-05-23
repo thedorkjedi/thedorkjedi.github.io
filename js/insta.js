@@ -24,7 +24,7 @@ core.insta.prototype.frameEvents = function(){
           insertedImg = jQuery('<img>',{ 'src': imgSrc.replace('_m.jpg','_z.jpg') });
 
       obj['background'].addClass(obj.activeClass);
-      !(obj['header'].hasClass(obj.minimizeClass)) ? obj['header'].addClass(obj.activeClass) : "";
+      !(obj['header'].hasClass(obj.minimizeClass)) ? obj['header'].addClass(obj.activeClass) : obj['header'].find('.minimize-header').trigger('click');
       obj['frame'].html(insertedImg);
 
     },
