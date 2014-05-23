@@ -46,7 +46,7 @@ core.insta.prototype.frameEvents = function(){
           obj['header'].removeClass(obj.minimizeClass);
         } else {
           obj['frame'].find('img').trigger('click');
-          obj['minimizer'].trigger('click');
+          window.setTimeout("obj['minimizer'].trigger('click')",1000);
         }
       }
     }
