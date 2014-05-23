@@ -24,7 +24,15 @@ core.insta.prototype.bindEvents = function(){
 
 	}
 
+	function turnBackEvents(event){
+		event.preventDefault();
+
+		obj['background'].removeClass(obj.activeClass);
+		obj['frame'].empty();
+	}
+
 	(function($,w){
 		$(obj.elements).click(runEvents);
+		$(obj.frame).click(turnBackEvents);
 	})(jQuery,window);
 }
