@@ -10,28 +10,6 @@ core.dimensions = function(){
   }
 }
 
-//generate background
-core.dimensions.prototype.setBackground = function(){
-
-  var _self = this;
-
-  function setImgURLS(obj){
-    jQuery.each(obj,function(id,val){
-      var url = val['media']['m'];
-      var img = jQuery('<img>',{ 'src': url });
-
-      jQuery('.bg-squares').eq(id).append(img);
-    });
-  }
-
-  return {
-    init: function(){
-      setImgURLS(_self.getImgURLs('http://api.flickr.com/services/feeds/photos_public.gne?id=112293664@N05&lang=en-us&&display_all=1&format=json&jsoncallback=?'));
-    }
-  }
-}
-
-
 //generate squares
 core.dimensions.prototype.setSquares = function(){
     var _this = this,
@@ -59,8 +37,16 @@ core.dimensions.prototype.setSquares = function(){
       bg.appendChild(sqr[i]);
     }
 
-    var setBg = this.setBackground();
-    setBg.init();
+    function setImgURLS(obj){
+      jQuery.each(obj,function(id,val){
+        var url = val['media']['m'];
+        var img = jQuery('<img>',{ 'src': url });
+
+        jQuery('.bg-squares').eq(id).append(img);
+      });
+    }
+
+    setImgURLS(this.getImgURLs('http://api.flickr.com/services/feeds/photos_public.gne?id=112293664@N05&lang=en-us&&display_all=1&format=json&jsoncallback=?'));
 
     return sqr;
 }
