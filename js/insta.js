@@ -18,7 +18,7 @@ core.insta.prototype.frameEvents = function(){
   return {
     runEvents: function (event){
       event.preventDefault();
-
+      console.log(jQuery(this).find('img').prop('src'));
       var self = jQuery(this),
           imgSrc = self.find('img').prop('src'),
           insertedImg = jQuery('<img>',{ 'src': imgSrc.replace('_m.jpg','_z.jpg') });
