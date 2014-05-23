@@ -41,7 +41,8 @@ core.insta.prototype.frameEvents = function(){
       obj['header'].addClass(obj.minimizeClass);
 
       if( !obj['background'].hasClass(obj.activeClass) && obj['header'].hasClass(obj.minimizeClass) ){
-        obj['header'].removeClass(obj.minimizeClass);        
+        //obj['header'].removeClass(obj.minimizeClass);        
+        console.log(true);
       }
     }
   }
