@@ -4,7 +4,7 @@ core.dimensions = function(){
   this.squareClass = "bg-squares";
   this.numberOfSquares = 20;
   this.squares = function(){
-    var sqr = [],        
+    var sqr = [];
 
     for( var i=0; i<this.numberOfSquares; i++ ){
       sqr.push(document.createElement('div'));
