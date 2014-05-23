@@ -39,11 +39,6 @@ core.insta.prototype.frameEvents = function(){
 
       var self = jQuery(this);
       obj['header'].addClass(obj.minimizeClass);
-
-      if( !obj['background'].hasClass(obj.activeClass) && obj['header'].hasClass(obj.minimizeClass) ){
-        //obj['header'].removeClass(obj.minimizeClass);        
-        console.log(true);
-      }
     }
   }
 
