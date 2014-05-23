@@ -46,6 +46,9 @@ a.minimize-header{background: #A83838;background: #A83838;top: -1rem;right: 0.4r
 .header.minimized .mini-title{display: block;float: left;font-size: 1rem;line-height: 3.125;font-weight: 800;}
 .header.minimized .regular-content.center{display: block;float: left;width: auto;padding-right: 0;}
 .header.minimized .regular-content.center img{ width:3.125rem; display:block; }
+.header.minimized .contact{}
+.header.minimized .contact li{}
+.header.minimized .contact a{}
 .header.minimized .contact a .text{display:none;}
 .header.minimized .contact a .fa{display:inline-block;}
 
