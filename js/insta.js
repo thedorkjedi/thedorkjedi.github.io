@@ -32,7 +32,7 @@ core.insta.prototype.frameEvents = function(){
       event.preventDefault();
 
       obj['background'].removeClass(obj.activeClass);
-      obj['header'].removeAttr('style');
+      obj['header'].hasClass(obj.minimizeClass) ? obj['header'] : obj['header'].removeAttr('style');
       obj['header'].removeClass(obj.activeClass);
       obj['header'].hasClass(obj.minimizeClass) ? jQuery(obj.header).drags(obj.draggable) : obj['header'].off();
     },
