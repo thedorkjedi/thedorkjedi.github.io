@@ -26,7 +26,7 @@ h1,h2,h3,h4,h5,h6{font-family: "Domine", Rockwell, serif;font-weight:900}
 .bg-squares img:hover{ -webkit-filter:grayscale(0%); -moz-filter:grayscale(0%); filter:grayscale(0%);  }
 
 a.minimize-header,.contact{position: absolute;top: 0;right: -4rem;}
-.contact{background: #58595b;}
+.contact{background: #434244;}
 .minimize-header{background: #A83838;}
 
 .background.background-active{ top:-100%; }
