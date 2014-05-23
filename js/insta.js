@@ -41,6 +41,9 @@ core.insta.prototype.frameEvents = function(){
       event.preventDefault();
 
       var self = jQuery(this);
+
+      $(obj.header).drags(obj.draggable);
+
       if(self.hasClass('minimize-header')){
         obj['header'].hasClass(obj.minimizeClass) ? obj['header'].removeClass(obj.minimizeClass) : obj['header'].addClass(obj.minimizeClass);
       }
@@ -67,6 +70,5 @@ core.insta.prototype.bindEvents = function(){
     $(obj.minimizer).click(evt.minimize);
     $(obj.elements).click(evt.runEvents);
     $(obj.frame).on('click','img',evt.turnBackEvents);
-    $(obj.header).drags(obj.draggable);
   })(jQuery,window);
 }
