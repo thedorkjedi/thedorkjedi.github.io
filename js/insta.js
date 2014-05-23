@@ -35,6 +35,7 @@ core.insta.prototype.frameEvents = function(){
       obj['background'].removeClass(obj.activeClass);
       obj['header'].removeAttr('style');
       obj['header'].removeClass(obj.activeClass);
+      obj['header'].off();
     },
     minimize: function(event){
       event.preventDefault();
@@ -47,6 +48,7 @@ core.insta.prototype.frameEvents = function(){
         if(!obj['background'].hasClass(obj.activeClass)){
           obj['header'].removeAttr('style');
           obj['header'].removeClass(obj.minimizeClass);
+          obj['header'].off();
         } else {
           obj['frame'].find('img').trigger('click');
           obj['header'].removeClass(obj.minimizeClass);
