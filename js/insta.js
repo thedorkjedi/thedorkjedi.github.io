@@ -40,6 +40,7 @@ core.insta.prototype.frameEvents = function(){
       obj['header'].addClass('minimized');
     }
   }
+
 }
 
 core.insta.prototype.bindEvents = function(){
