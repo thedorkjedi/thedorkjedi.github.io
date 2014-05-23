@@ -45,8 +45,8 @@ core.insta.prototype.frameEvents = function(){
         if(!obj['background'].hasClass(obj.activeClass)){
           obj['header'].removeClass(obj.minimizeClass);
         } else {
-          obj['frame'].trigger('click');
-          obj['minimizer'].trigger('click')
+          obj['frame'].find('img').trigger('click');
+          obj['minimizer'].trigger('click');
         }
       }
     }
