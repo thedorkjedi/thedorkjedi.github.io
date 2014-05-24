@@ -44,7 +44,13 @@ core.insta.prototype.frameEvents = function(){
       jQuery(obj.header).drags(obj.draggable);
 
       if(self.hasClass('minimize-header')){
-        obj['header'].hasClass(obj.minimizeClass) ? obj['header'].removeClass(obj.minimizeClass) : obj['header'].addClass(obj.minimizeClass);
+        if(obj['header'].hasClass(obj.minimizeClass)){
+          obj['header'].removeClass(obj.minimizeClass);
+          obj['header'].removeAttr('style');
+          obj['header'].off();
+        } else { 
+          obj['header'].addClass(obj.minimizeClass);
+        }
       }
       if(self.hasClass('mini-title')){
         obj['header'].removeAttr('style');
