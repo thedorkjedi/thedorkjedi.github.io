@@ -49,6 +49,7 @@ core.insta.prototype.frameEvents = function(){
           obj['header'].removeAttr('style');
           obj['header'].off();
         } else { 
+          obj['header'].removeAttr('style');
           obj['header'].addClass(obj.minimizeClass);
         }
       }
