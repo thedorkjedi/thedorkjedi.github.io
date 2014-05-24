@@ -62,6 +62,7 @@ core.insta.prototype.frameEvents = function(){
         } else {
           obj['frame'].find('img').trigger('click');
           obj['header'].removeClass(obj.minimizeClass);
+          obj['header'].off();
         }
       }
     }
