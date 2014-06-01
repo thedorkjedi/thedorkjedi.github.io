@@ -9,7 +9,7 @@ core.dimensions = function(){
     for( var i=0; i<sqrs; i++ ){
       sqr.push(document.createElement(element));
       sqr[i].className = this.squareClass;
-      sqr[i].id = "sqr-" + i;
+      sqr[i].id = "sqr-" + (i + 1);
     }
 
     return sqr;
