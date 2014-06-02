@@ -72,7 +72,7 @@ a.minimize-header{background: #A83838;background: #A83838;top: -1rem;right: 0.4r
   .bg-squares img{ height:auto; width:100%; }
 }
 
-/* iPads ----------- */
+/* tablets ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
   #SQR-17,#SQR-18,#SQR-19,#SQR-20{display:none;}
   .bg-squares{width:25%;}
@@ -80,7 +80,14 @@ a.minimize-header{background: #A83838;background: #A83838;top: -1rem;right: 0.4r
   .chosen img{border-radius: 0;width:100%; box-shadow: none; }
 }
 
-/* iPad -- force user to rotate */
+/* tablets -- force user to rotate */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation:portrait) {
   body {-webkit-transform: rotate(90deg);width: 100%;height: 100%;overflow: hidden;position: absolute;top: 0;left: 0; }
+}
+
+/* phones */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  #SQR-13,#SQR-14,#SQR-15,#SQR-16,#SQR-17,#SQR-18,#SQR-19,#SQR-20{display:none;}
+  .bg-squares img{-webkit-filter:none;-moz-filter:none;-ms-filter:none;filter:none;}
+  .chosen img{border-radius: 0;width:100%; box-shadow: none; }
 }
