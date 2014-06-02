@@ -79,5 +79,5 @@ a.minimize-header{background: #A83838;background: #A83838;top: -1rem;right: 0.4r
 
 /* iPad -- force user to rotate */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation:portrait) {
-  body {-webkit-transform: rotate(90deg);width: 133.34%;height: 100%;overflow: hidden;position: absolute;top: 0;left: 0; }
+  body {-webkit-transform: rotate(90deg);width: 100%;height: 100%;overflow: hidden;position: absolute;top: 0;left: 0; }
 }
