@@ -71,8 +71,8 @@ a.minimize-header{background: #A83838;background: #A83838;top: -1rem;right: 0.4r
 
 /* iPads ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-  #SQR-17,#SQR-18,#SQR-19,#SQR-20{display:none;}
-  .bg-squares{width:25%;}
+  #SQR-13,#SQR-14,#SQR-15,#SQR-16,#SQR-17,#SQR-18,#SQR-19,#SQR-20{display:none;}
+  .bg-squares{width:33.33%;height:33.33%;}
   .bg-squares img{-webkit-filter:none;-moz-filter:none;-ms-filter:none;filter:none;}
   .chosen img{border-radius: 0;width:100%;}
 }
