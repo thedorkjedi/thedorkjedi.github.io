@@ -74,7 +74,7 @@ a.minimize-header{background: #A83838;background: #A83838;top: -1rem;right: 0.4r
   #SQR-17,#SQR-18,#SQR-19,#SQR-20{display:none;}
   .bg-squares{width:25%;}
   .bg-squares img{-webkit-filter:none;-moz-filter:none;-ms-filter:none;filter:none;}
-  .chosen img{border-radius: 0;width:100%;}
+  .chosen img{border-radius: 0;width:100%; box-shadow: none; }
 }
 
 /* iPad -- force user to rotate */
