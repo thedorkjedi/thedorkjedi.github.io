@@ -59,14 +59,13 @@ a.minimize-header{background: #A83838;background: #A83838;top: -1rem;right: 0.4r
 .header.minimized .contact a .text{display:none;}
 .header.minimized .contact a .fa{display:inline-block;display: inline-block;font-size: 1.8rem;vertical-align: middle;}
 
-@media only screen and (max-width:480px){
-  .header{ position:static; height: auto; }
-  .header,.title-heading, .subtitle-heading,.link-heading,.regular-content,.heading-details{ width:100%; }
-  .heading-details{margin-top:-38px;}
-}
-
+/* for widescreens */
 @media screen and (max-width: 1750px){
   .bg-squares img{ height:132%; }
+}
+
+@media screen and (max-height: 926px){
+  .bg-squares img{ height:142%; }
 }
 
 /* iPads ----------- */
