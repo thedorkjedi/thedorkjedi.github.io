@@ -87,9 +87,8 @@ a.minimize-header{background: #A83838;background: #A83838;top: -1rem;right: 0.4r
 
 /* phones */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-  #SQR-13,#SQR-14,#SQR-15,#SQR-16,#SQR-17,#SQR-18,#SQR-19,#SQR-20{display:none;}
+  #SQR-9,#SQR-10,#SQR-11,#SQR-12,#SQR-13,#SQR-14,#SQR-15,#SQR-16,#SQR-17,#SQR-18,#SQR-19,#SQR-20{display:none;}
   .bg-squares {width:33.34%;height:33.34%;position:relative;}
   .bg-squares img{-webkit-filter:none;-moz-filter:none;-ms-filter:none;filter:none;width:initial;height:100%;}
-  .background.background-active{top:-140%;}
   .chosen img{border-radius: 0;width:100%; box-shadow: none; }
 }
