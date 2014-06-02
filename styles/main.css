@@ -75,8 +75,8 @@ a.minimize-header{background: #A83838;background: #A83838;top: -1rem;right: 0.4r
   .bg-squares{width:25%;}
   .bg-squares img{-webkit-filter:none;-moz-filter:none;-ms-filter:none;filter:none;}
 }
-
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
   #SQR-17,#SQR-18,#SQR-19,#SQR-20{display:none;}
   .bg-squares{width:25%;}
   .bg-squares img{-webkit-filter:none;-moz-filter:none;-ms-filter:none;filter:none;}

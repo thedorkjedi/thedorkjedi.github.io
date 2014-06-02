@@ -14,7 +14,8 @@ core.insta = function(){
 }
 
 core.insta.prototype.frameEvents = function(){
-  var obj = this.objects;
+  var obj = this.objects,
+      helpers = core.helpers();
 
   return {
     runEvents: function (event){
@@ -22,7 +23,7 @@ core.insta.prototype.frameEvents = function(){
 
       var self = jQuery(this),
           imgSrc = self.find('img').prop('src'),
-          insertedImg = jQuery('<img>',{ 'src': imgSrc.replace('_m.jpg','_z.jpg') });
+          insertedImg = jQuery('<img>',{ 'src': imgSrc.replace('_m.jpg', helpers.isMobile ? '_b.jpg' : '_z.jpg') });
 
       obj['background'].addClass(obj.activeClass);
       !(obj['header'].hasClass(obj.minimizeClass)) ? obj['header'].find('.minimize-header').trigger('click') : "";
