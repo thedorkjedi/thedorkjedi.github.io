@@ -103,8 +103,8 @@ a.minimize-header{background: #A83838;background: #A83838;top: -1rem;right: 0.4r
   .mobile-heading{display: block;font-family: "Domine", Rockwell, serif;font-weight:900;color:#FFF;padding:1rem 1rem 0;font-size:1.5rem;}
   .contact{position:static;top:auto;left:auto;padding:0 1rem;display:block;width:auto;background:transparent;margin:1rem 0 0 0;box-shadow:none;}
   .contact:after{display:block;clear:both;height:0;line-height:0;font-size:0;content:".";}
-  .contact li{float:left;}
-  .contact li a{text-align: center;}
+  .contact li{float:left;width:50%;}
+  .contact li a{padding:0.4rem 0;}
 
   .chosen img{border-radius: 0;width:100%; box-shadow: none; }
 }
