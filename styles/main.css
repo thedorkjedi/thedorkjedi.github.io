@@ -97,7 +97,7 @@ a.minimize-header{background: #A83838;background: #A83838;top: -1rem;right: 0.4r
 
   #SQR-10,#SQR-11,#SQR-12,#SQR-13,#SQR-14,#SQR-15,#SQR-16,#SQR-17,#SQR-18,#SQR-19,#SQR-20{display:none;}
   .bg-squares {width:33.34%;height:33.34%;position:relative;}
-  .bg-squares img{-webkit-filter:none;-moz-filter:none;-ms-filter:none;filter:none;width:initial;height:100%;}
+  .bg-squares img{width:initial;height:100%;}
 
   .regular-content.center,.drag-handle,.title-heading, a.minimize-header{display:none;}
   .mobile-heading{display: block;font-family: "Domine", Rockwell, serif;font-weight:900;color:#FFF;padding:1rem 1rem 0;font-size:1.5rem;}
