@@ -1,18 +1,22 @@
 core = core || {};
 
+core.version = "thedorkjedi - github version 1.00";
 core.home = function(){
   return {
     init: function(w,$){
       $(function(){
-      	console && console.log ? console.log("thedorkjedi - github version 1.00") : window.log("thedorkjedi - github version 1.00");
+        //set helpers
+        var helpers = core.helpers();
 
       	//set background
       	var background = new core.dimensions();
       	background.setSquares();
 
       	// set events
-      	var events = new core.insta();
-      	events.bindEvents();
+        if(!helpers.isAppleMobile){
+        	var events = new core.insta();
+        	events.bindEvents();
+        }
       });
     }
   }
