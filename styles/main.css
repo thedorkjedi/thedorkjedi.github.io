@@ -110,6 +110,6 @@ a.minimize-header{background: #A83838;background: #A83838;top: -1rem;right: 0.4r
   .chosen img{border-radius: 0;width:100%; box-shadow: none; }
 }
 
-@media only screen and (-webkit-device-pixel-ratio: 1) and (min-device-width : 320px){
+@media only screen and (-webkit-device-pixel-ratio:2) (min-device-width : 320px) and (max-device-width : 480px){
   body{min-height:372px;}
 }
