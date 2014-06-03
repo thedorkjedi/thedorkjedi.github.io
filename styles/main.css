@@ -101,5 +101,7 @@ a.minimize-header{background: #A83838;background: #A83838;top: -1rem;right: 0.4r
 
   .regular-content.center,.drag-handle,.title-heading, a.minimize-header{display:none;}
   .mobile-heading{display: block;font-family: "Domine", Rockwell, serif;font-weight:900;color:#FFF;padding:1rem 1rem 0;font-size:1.5rem;}
+  .contact{position:static;top:auto;left:auto;}
+
   .chosen img{border-radius: 0;width:100%; box-shadow: none; }
 }
