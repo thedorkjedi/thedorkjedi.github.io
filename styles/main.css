@@ -101,7 +101,9 @@ a.minimize-header{background: #A83838;background: #A83838;top: -1rem;right: 0.4r
 
   .regular-content.center,.drag-handle,.title-heading, a.minimize-header{display:none;}
   .mobile-heading{display: block;font-family: "Domine", Rockwell, serif;font-weight:900;color:#FFF;padding:1rem 1rem 0;font-size:1.5rem;}
-  .contact{position:static;top:auto;left:auto;}
+  .contact{position:static;top:auto;left:auto;padding:0 1rem;display:block;width:auto;}
+  .contact:after{display:block;clear:both;height:0;line-height:0;font-size:0;content:".";background:transparent;}
+  .contact li{float:left;}
 
   .chosen img{border-radius: 0;width:100%; box-shadow: none; }
 }
