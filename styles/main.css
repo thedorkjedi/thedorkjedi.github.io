@@ -49,7 +49,7 @@ a.minimize-header{background: #A83838;top: -1rem;right: 0.4rem;text-decoration: 
 .header.minimized .mini-title:hover{text-decoration: none;}
 .header.minimized .regular-content.center{display: block;float: left;width: auto;padding-right: 0;}
 .header.minimized .regular-content.center img{ width:3.125rem; display:block; }
-.header.minimized .contact{padding: 0;height: 4.1rem;width: 16.5rem;right: 0rem;top: 0rem;overflow: hidden;box-shadow: none;}
+.header.minimized .contact{padding: 0;height: 4.1rem;width: 16.5rem;right: 0;top: 0;overflow: hidden;box-shadow: none;}
 .header.minimized .contact li{float: left;height: 4.125rem;margin: 0;width: 4.125rem;}
 .header.minimized .contact a{text-align: center;vertical-align: middle;padding: 1.2rem 0.4rem;background: #272425;text-decoration: none;}
 .header.minimized .contact a:hover{color:#FF8;}
@@ -64,7 +64,7 @@ a.minimize-header{background: #A83838;top: -1rem;right: 0.4rem;text-decoration: 
 }
 
 @media screen and (max-height: 926px){
-  .bg-squares img{ height:142%; }
+  .bg-squares img{ width:100%; }
 }
 
 @media screen and (max-height: 720px){
