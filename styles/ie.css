@@ -10,7 +10,8 @@
 .contact li{ margin: 0 0 3.200000047683716px 0; }
 .bg-squares img{height:auto; width:100%;}
 .contact a{ padding: 6.400000095367432px;font-size: 14px; }
-a.minimize-header{ top: -16px;right: 6.400000095367432px;padding: 4.800000190734863px;height: 16px;width: 13px;right: 6.400000095367432px; }
+a.minimize-header{ top: -16px;right: 6.400000095367432px;padding: 4.800000190734863px;height: 16px;width: 13px;right: 6.400000095367432px; filter: gray; }
+a.minimize-header:hover{ filter: none; }
 
 .header.minimized{ width:440px;height: 65.594px; }
 .header.minimized .drag-handle{ width: 42px;left: -42px;top: 11.200px;font-size: 22px;padding: 9.808px 0; }
