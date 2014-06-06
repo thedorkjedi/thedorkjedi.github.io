@@ -64,7 +64,7 @@ a.minimize-header{background: #A83838;top: -1rem;right: 0.4rem;text-decoration: 
 }
 
 @media screen and (max-height: 926px){
-  .bg-squares img{ width:100%; }
+  .bg-squares img{ height:142%; }
 }
 
 @media screen and (max-height: 720px){
