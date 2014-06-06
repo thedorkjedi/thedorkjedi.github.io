@@ -1,0 +1,13 @@
+.preload{height: 20px;top: -24px;}
+
+.header{width: 344px;height: 272px;}
+.title-heading{ font-size:48px;width:120px;margin:16px; line-height: 50.880001068115234px; }
+.heading-details{ width:192px;padding-bottom:16px; }
+
+.regular-content{ font-size:11px;padding:16px 16px 0 16px; }
+a.minimize-header,.contact{right: 6.400000095367432px;}
+
+.contact{ width: 89.59375px;padding: 32px 0; }
+.contact li{ margin: 0 0 3.200000047683716px 0; }
+.contact a{ padding: 6.400000095367432px;font-size: 14px; }
+a.minimize-header{ top: -16px;right: 6.400000095367432px;padding: 4.800000190734863px;height: 16px;width: 13px; }
