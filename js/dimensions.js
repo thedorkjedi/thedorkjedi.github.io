@@ -21,7 +21,7 @@ core.dimensions.prototype.setSquares = function(){
     var _this = this;
 
     var sqr = _this.squares('div',_this.numberOfSquares);
-    var bg = document.getElementsByClassName('background')[0];
+    var bg = document.getElementById('background');
 
     bg.innerHTML = "";
 
