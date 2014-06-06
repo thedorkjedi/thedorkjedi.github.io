@@ -20,4 +20,4 @@ a.minimize-header{ top: -16px;right: 6.400000095367432px;padding: 4.800000190734
 .header.minimized .contact{ height: 65.594px;width: 264px;right: 0;top: 0; }
 .header.minimized .contact li{ height: 66px;width: 66px; }
 .header.minimized .contact a{ padding: 19.200px 6.400px; }
-.header.minimized .contact a i.fa{ font-size: 29px!important; }
+.header.minimized .contact a i.fa{ display:inline-block; font-size: 29px; }
