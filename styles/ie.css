@@ -10,4 +10,4 @@ a.minimize-header,.contact{right: 6.400000095367432px;}
 .contact{ width: 89.59375px;padding: 32px 0; }
 .contact li{ margin: 0 0 3.200000047683716px 0; }
 .contact a{ padding: 6.400000095367432px;font-size: 14px; }
-a.minimize-header{ top: -16px;right: 6.400000095367432px;padding: 4.800000190734863px;height: 16px;width: 13px; }
+a.minimize-header{ top: -16px;right: 6.400000095367432px;padding: 4.800000190734863px;height: 16px;width: 13px; width:89.59375px; }
