@@ -22,7 +22,7 @@ h1,h2,h3,h4,h5,h6{font-family: "Domine", Rockwell, serif;font-weight:900}
 
 .background{position:absolute;height:100%;width:100%;top: 0%; z-index: 5; transition: all 1s;}
 .bg-squares{ box-sizing:border-box; float:left; height:25%; width:20%; background-color:#231f20; overflow: hidden; position: relative; }
-.bg-squares img{ height:111%; -webkit-filter:grayscale(100%); -moz-filter:grayscale(100%); filter:grayscale(100%); transition: all 0.25s; }
+.bg-squares img{ height:111%; width:auto; -webkit-filter:grayscale(100%); -moz-filter:grayscale(100%); filter:grayscale(100%); transition: all 0.25s; }
 .bg-squares img:hover{ -webkit-filter:grayscale(0%); -moz-filter:grayscale(0%); filter:grayscale(0%); }
 .mini-title{display:none;}
 
