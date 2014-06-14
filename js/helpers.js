@@ -2,7 +2,7 @@ core = core || {};
 
 core.helpers = function(){
 	var getBreakPoint = function(){
-				var ret = "normal";
+				var ret = "no-breakpoint";
 				if($('#SQR-17').css('display') == "none"){
 					ret = "tablet-breakpoint"
 				}
