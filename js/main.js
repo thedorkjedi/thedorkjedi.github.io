@@ -17,6 +17,11 @@ core.home = function(){
         	var events = new core.insta();
         	events.bindEvents();
         }
+
+        //set body breakpoint
+        $(window).resize(function(){
+          $("body").addClass(helpers.setBreakPoint);
+        });
       });
     }
   }
