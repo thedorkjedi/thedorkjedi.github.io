@@ -21,13 +21,16 @@ body{
 .main-nav{
   text-align: center;
   margin-top: 6vh;
+  vertical-align: bottom;
 }
 .main-nav a{
   display:inline-block;
+  vertical-align: bottom;
   background: #333;
   text-decoration: none;
   color:#fefefe;
   font-size: 14px;
+  line-height: 1;
   padding: 10px 20px;
   border-radius: 20px;
   margin: 0 6px;
