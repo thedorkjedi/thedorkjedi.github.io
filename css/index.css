@@ -53,6 +53,7 @@ a{
   margin-top: 0vh;
   height:0;
   z-index: -1;
+  position: relative;
   transition: opacity 0ms;
 }
 .content.active{
