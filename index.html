@@ -42,12 +42,12 @@
       </div>
     </div>
     <script>
-      var actions;
+      var show;
       {
         let all;
         let none = "no action taken";
 
-        actions = function(s){
+        show = function(s){
           if(typeof s === "string"){
             //reset
             all = document.querySelectorAll('.content');
