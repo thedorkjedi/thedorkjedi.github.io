@@ -47,7 +47,7 @@
         let all;
         let none = "no action taken";
 
-        var changeClasses = function(cl, st){
+        let changeClasses = function(cl, st){
           all = document.querySelectorAll(cl + '');
           all.forEach(function(id){
             id.className = id.className.indexOf('active') >= 0? id.className.replace('active','') : id.className;
@@ -57,8 +57,8 @@
 
         show = function(s){
           if(typeof s === "string"){
-            changeClasses('.content', s);
-            changeClasses('.main-nav a', s);
+            new changeClasses('.content', s);
+            new changeClasses('.main-nav a', s);
           } else {
             console.log(none);
           }
