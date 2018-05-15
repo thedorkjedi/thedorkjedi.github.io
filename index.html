@@ -14,9 +14,9 @@
     <div class="root">
       <div class="avatar-img"></div>
       <nav class="main-nav">
-        <a href="#">About Me</a>
-        <a href="#">Portfolio</a>
-        <a href="#contact">Contact</a>
+        <a href="javascript:show('about')">About Me</a>
+        <a href="javascript:show('portfolio')">Portfolio</a>
+        <a href="javascript:show('contact')">Contact</a>
       </nav>
       <div class="content about active">
         <p>Hi, I'm <span class="bold">Elmer John Grande</span>.</p>
@@ -41,5 +41,25 @@
         <p><script>document.write(new Date().getFullYear())</script> &copy; thedorkjedi | elmer john grande</p>
       </div>
     </div>
+    <script>
+      var actions;
+      {
+        let all;
+        let none = "no action taken";
+
+        actions = function(s){
+          if(typeof s === "string"){
+            //reset
+            all = document.querySelectorAll('.content');
+            all.forEach(function(id){
+              id.className = id.className.indexOf('active') >= 0? id.className.replace('active','') : id.className;
+            });
+            document.querySelectorAll('.content.' + s)[0].length ? (document.querySelectorAll('.content.' + s)[0]).className+=' active' : none;
+          } else {
+            console.log(none);
+          }
+        }
+      }
+    </script>
   </body>
 </html>
