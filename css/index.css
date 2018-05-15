@@ -48,12 +48,16 @@ a{
 }
 
 .content{
-  display:none;
+  opacity:0;
   text-align: center;
   margin-top: 4vh;
+  height:0;
+  transition: opacity,height 125ms;
 }
 .content.active{
-  display:block;
+  opacity:1;
+  height: 14vh;
+  transition: opacity, height 150ms;
 }
 .content p{
   font-size: 12px;
