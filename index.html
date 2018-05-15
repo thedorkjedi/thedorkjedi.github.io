@@ -14,9 +14,9 @@
     <div class="root">
       <div class="avatar-img"></div>
       <nav class="main-nav">
-        <a href="javascript:show('about')">About Me</a>
-        <a href="javascript:show('portfolio')">Portfolio</a>
-        <a href="javascript:show('contact')">Contact</a>
+        <a class="about active" href="javascript:show('about')">About Me</a>
+        <a class="portfolio" href="javascript:show('portfolio')">Portfolio</a>
+        <a class="contact" href="javascript:show('contact')">Contact</a>
       </nav>
       <div class="content about active">
         <p>Hi, I'm <span class="bold">Elmer John Grande</span>.</p>
@@ -25,10 +25,10 @@
         <p>To one function at a time.</p>
       </div>
       <div class="content portfolio">
-        <p>Mint Global: <a href="http://dev.veritrack.io">Dev</a> | <a href="http://statloader.net">Prod</a></p>
-        <p>Pokerlistings: <a href="http://pokerlistings.com">Prod</a></p>
-        <p>CasinoTop10: <a href="http://casinotop10.net">Prod</a></p>
-        <p>GamblingPlanet: <a href="http://gamblingplanet.net">Prod</a></p>
+        <p>Mint Global: <a href="http://dev.veritrack.io" target="_blank">Dev</a> | <a href="http://statloader.net" target="_blank">Prod</a></p>
+        <p>Pokerlistings: <a href="http://pokerlistings.com" target="_blank">Prod</a></p>
+        <p>CasinoTop10: <a href="http://casinotop10.net" target="_blank">Prod</a></p>
+        <p>GamblingPlanet: <a href="http://gamblingplanet.net" target="_blank">Prod</a></p>
         <p>As for others, please turn to <a href="#contact">contact</a> on other works that I have done.</a>
       </div>
       <div class="content contact">
@@ -47,14 +47,18 @@
         let all;
         let none = "no action taken";
 
+        var changeClasses = function(cl, st){
+          all = document.querySelectorAll(cl + '');
+          all.forEach(function(id){
+            id.className = id.className.indexOf('active') >= 0? id.className.replace('active','') : id.className;
+          });
+          document.querySelectorAll(cl + '.' + st).length ? (document.querySelectorAll(cl + '.' + st)[0]).className+='active' : none;
+        };
+
         show = function(s){
           if(typeof s === "string"){
-            //reset
-            all = document.querySelectorAll('.content');
-            all.forEach(function(id){
-              id.className = id.className.indexOf('active') >= 0? id.className.replace('active','') : id.className;
-            });
-            document.querySelectorAll('.content.' + s).length ? (document.querySelectorAll('.content.' + s)[0]).className+=' active' : none;
+            changeClasses('.content', s);
+            changeClasses('.main-nav a', s);
           } else {
             console.log(none);
           }
