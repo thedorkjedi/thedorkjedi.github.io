@@ -54,7 +54,7 @@
             all.forEach(function(id){
               id.className = id.className.indexOf('active') >= 0? id.className.replace('active','') : id.className;
             });
-            document.querySelectorAll('.content.' + s)[0].length ? (document.querySelectorAll('.content.' + s)[0]).className+=' active' : none;
+            document.querySelectorAll('.content.' + s).length ? (document.querySelectorAll('.content.' + s)[0]).className+=' active' : none;
           } else {
             console.log(none);
           }
