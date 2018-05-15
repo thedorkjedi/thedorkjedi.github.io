@@ -8,6 +8,9 @@
 body{
   background:#EFEFEF;
 }
+a{
+  cursor: pointer;
+}
 
 .avatar-img{
   background: transparent url('../img/avatar.jpg') 0 0 no-repeat; background-size: contain;
