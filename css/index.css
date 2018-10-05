@@ -13,6 +13,7 @@ a{
 }
 
 .avatar-img{
+  display:block;
   background: transparent url('../img/avatar.jpg') 0 0 no-repeat; background-size: contain;
   width: 160px; height:160px;
   border-radius: 50%;
@@ -20,6 +21,11 @@ a{
   margin: 0 auto;
   margin-top: 20vh;
   border: 8px solid #FFF;
+  transition: transform 80ms;
+}
+.avatar-img:hover{
+  transform: rotate(-18deg);
+  transition: transform 80ms;
 }
 
 .main-nav{
