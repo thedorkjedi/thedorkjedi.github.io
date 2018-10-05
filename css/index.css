@@ -15,10 +15,11 @@ a{
 .avatar-img{
   background: transparent url('../img/avatar.jpg') 0 0 no-repeat; background-size: contain;
   width: 160px; height:160px;
-  border-radius: 80px;
+  border-radius: 50%;
   box-shadow: 3px 5px 7px rgba(0,0,0,.35);
   margin: 0 auto;
   margin-top: 20vh;
+  border: 8px solid #FFF;
 }
 
 .main-nav{
@@ -44,7 +45,6 @@ a{
 .main-nav a.active{
   background-color: #EFEFEF;
   color:#333;
-  border-radius: 12px;
 }
 
 .content{
