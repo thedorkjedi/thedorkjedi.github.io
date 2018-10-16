@@ -48,11 +48,8 @@ a{
   line-height: 1;
   padding: 10px 20px;
   border-radius: 20px;
-  margin: 0 6px;
+  margin-right:6px;
   transition: border-radius 120ms, background-color 250ms, color 250ms;
-}
-.main-nav a:first-child{
-  margin-left: 0;
 }
 .main-nav a:last-child{
   margin-right: 0;
