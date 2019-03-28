@@ -1435,12 +1435,20 @@ ol.m-t-25 li, ol.m-t-5 li{margin-bottom:20px;font-size:18px;font-weight: 700;}
 ol.m-t-25 li .title{font-size: 18px;display:inline-block;margin-bottom:16px;}
  ol.m-t-5 li{font-size: 14px;font-weight: 300;margin-bottom:4px;}
 ol.m-t-25 li p{font-weight: 300;}
-.content p.caption-head{font-size: 14px;font-style: italic;}
+.content p.caption-head{font-size: 14px;}
+.content p.caption-head.italic{font-style: italic;}
 span.caption{display: block;}
 html body p.m-t-25,
 html body ol.m-t-25 li p,
 html body ul.m-t-25 li p{text-align: justify!important;}
 p.testimonial{font-style: italic;}
+p.m-t-25 a{font-weight: 700!important;color:rgb(1,152,189)!important;}
+h1.article-header .subset-footnote{
+  vertical-align: top;
+  position: relative;
+  top: -6px;
+  font-size: 70%;
+}
 .push_to_right {
     padding-left: 100px;
 }
