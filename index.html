@@ -68,7 +68,20 @@
       alert('not intended for older browsers.');
     }
     if(location.hash && location.hash === '#portfolio'){
-      debugger;
+      window.setTimeout(function(){
+        var root = document.querySelectorAll('.root')[0];
+        var div = document.createElement('div');
+        div.setAttribute('class', 'portfolio-page');
+
+        var heading = document.createElement('h1');
+        heading.setAttribute('heading');
+
+        var headingText = document.createTextNode('This is the portfolio secret page.');
+
+        heading.appendChild(headingText);
+        div.appendChild(heading);
+        root.appendChild(div);
+      },2000);
     }
     </script>
   </body>
