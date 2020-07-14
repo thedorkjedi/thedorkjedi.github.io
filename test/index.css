@@ -72,11 +72,11 @@ main{
   overflow: hidden;
   width: 480px;
   height: 480px;
-  background: transparent url('../DishImages/DirtWood.jpg') 0 0 no-repeat;
+  background: transparent url('DishImages/DirtWood.jpg') 0 0 no-repeat;
   background-size: contain;
 }
 .img-comp-img.img-comp-overlay{
-  background: transparent url('../DishImages/CleanWood.jpg') 0 0 no-repeat;
+  background: transparent url('DishImages/CleanWood.jpg') 0 0 no-repeat;
   background-size: auto 100%;
   border-right: 4px solid #FFF;
 }
