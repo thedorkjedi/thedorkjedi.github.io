@@ -95,3 +95,9 @@ a{
   font-size:10px;
   color: #ccc;
 }
+
+@font-face {
+    font-family: "AvenirLTStd-Medium";
+    font-size: 25px;
+    src: url("https://catchcreation.com/fonts/AvenirLTStd-Medium.otf") format("opentype");
+}
