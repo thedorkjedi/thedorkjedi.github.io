@@ -96,11 +96,12 @@
     </style>
   </head>
   <body>
+    <script src="invite-list.js"></script>
     <div class="invite-container-form" id="invite-test">
       <div class="invite-form">
         <label>Tell me your surname</label>
-        <input type="text" class="form-text" id="form-text" />
-        <button onclick="checkSurname()">Send</button>
+        <input type="text" class="form-text" id="form-text" onkeyup="enterTest(event)" />
+        <button onclick="checkSurname()" id="sendButton">Send</button>
       </div>
     </div>
     <div class="invite-container d-none" id="invited">
@@ -119,7 +120,7 @@
       <h2>You can contact Scarlet Overkill if you believe there was a mistake!</h2>
     </div>
     <script>
-      document.addEventListener('contextmenu', event => event.preventDefault());
+      // document.addEventListener('contextmenu', event => event.preventDefault());
       let invitedList = [
         'tanghal',
         'pedrezuela',
@@ -146,7 +147,7 @@
         } else {
           val = input.value;
 
-          check = invitedList.filter((e) => { return e === val; });
+          check = masterList?.filter((e) => { return e === val; });
 
           if(check?.length > 0){
             invited.classList.remove('d-none');
@@ -177,8 +178,11 @@
         }
       }
 
-      // let notInvited = document.querySelectorAll('#notInvited')[0];
-      // let check = invitedList.filter((e) => { return e === test; });
+      function enterTest(event){
+        if(event.keyCode === 13) {
+          checkSurname();
+        }
+      }
     </script>
   </body>
 </html>
