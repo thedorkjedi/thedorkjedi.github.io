@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="user-scalable=no">
+    <title>Top Secret Stuff!</title>
+    <style>
+      * { margin: 0; padding: 0; line-height: 1; font: 10px/1 Arial; user-select: none; }
+      .invite-container {
+        padding: 40px 0;
+        display: flex;
+        justify-content: center;
+      }
+      .invite-root {
+        flex: 1 1 100%;
+        width: 1035px;
+        height: 1019px;
+        margin: 0 auto;
+        position: relative;
+      }
+      .m-body {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: transparent url('img/body.png') center 0 no-repeat;
+      }
+      .invite-hands {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: transparent url('img/hands.png') center 492px no-repeat;
+      }
+      .invite-pg-1 {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: transparent url('img/page-1.png') center 512px no-repeat;
+      }
+      .invite-pg-2 {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: transparent url('img/page-2.png') center 512px no-repeat;
+      }
+      .invite-pg-3 {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: transparent url('img/page-3.png') center 512px no-repeat;
+      }
+      .shadow {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: transparent url('img/shadow.png') center bottom no-repeat;
+      }
+      .uninvited {
+        padding: 40px;
+        text-align: center;
+      }
+      h1 { font-size: 36px; padding: 0 0 16px; font-weight: 600; }
+      h2 { font-size: 24px; font-style: italic; color: #999 }
+      .d-none {
+        display: none;
+      }
+      .v-none {
+        visibility: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="invite-container d-none" id="invited">
+      <div class="invite-root">
+        <div class="shadow"></div>
+        <div class="m-body">
+          <div class="invite-pg-3" id="page3"></div>
+          <div class="invite-pg-2" id="page2"></div>
+          <div class="invite-pg-1" id="page1"></div>
+          <div class="invite-hands" id="hands" onclick="changePage()"></div>
+        </div>
+      </div>
+    </div>
+    <div class="uninvited d-none" id="notInvited">
+      <h1>Moving along now! Nothing to see here!</h1>
+      <h2>You can contact Scarlet Overkill if you believe there was a mistake!</h2>
+    </div>
+    <script>
+      document.addEventListener('contextmenu', event => event.preventDefault());
+      let invitedList = [
+        'tanghal',
+        'pedrezuela',
+        'sarao',
+        'guelas',
+        'vengua',
+      ];
+      let test = prompt("What's your surname?");
+      let invited = document.querySelectorAll('#invited')[0];
+      let page1 =  document.querySelectorAll('#page1')[0];
+      let page2 =  document.querySelectorAll('#page2')[0];
+      let page3 =  document.querySelectorAll('#page3')[0];
+      let hands =  document.querySelectorAll('#page3')[0];
+      let download = document.querySelectorAll('invite-download')[0];
+      let counter = 2;
+
+      function changePage(){
+        if (counter == 2) {
+          page1.classList.add('d-none');
+        }
+        if (counter === 1) {
+          page2.classList.add('d-none');
+        }
+        if (counter === 0) {
+          let anchor = document.createElement('a');
+          anchor.href = 'qr-code.png';
+          anchor.target = '_blank';
+          anchor.download = 'invite-qr-code.png';
+          anchor.click();
+        }
+        if(counter > -1){
+          counter = counter - 1;
+        }
+      }
+
+      let notInvited = document.querySelectorAll('#notInvited')[0];
+      let check = invitedList.filter((e) => { return e === test; });
+
+      if(check?.length > 0){
+        invited.classList.remove('d-none');
+      } else {
+        notInvited.classList.remove('d-none');
+      }
+    </script>
+  </body>
+</html>
