@@ -4,4 +4,6 @@ let masterList = [
   'sarao',
   'guelas',
   'vengua',
+  'odulio',
+  'grande',
 ];
