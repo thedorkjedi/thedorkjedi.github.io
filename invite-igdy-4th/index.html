@@ -120,13 +120,24 @@
       <h2>You can contact Scarlet Overkill if you believe there was a mistake!</h2>
     </div>
     <script>
-      // document.addEventListener('contextmenu', event => event.preventDefault());
+      document.addEventListener('contextmenu', event => event.preventDefault());
       let invitedList = [
         'tanghal',
         'pedrezuela',
         'sarao',
         'guelas',
         'vengua',
+        'odulio',
+        'grande',
+        'matias',
+        'sagcal',
+        'silva',
+        'roberto',
+        'lim',
+        'soriano',
+        'okuda',
+        'advincula',
+        'invitedakoplease'
       ];
       // let test = prompt("What's your surname?");
       let invited = document.querySelectorAll('#invited')[0];
@@ -145,9 +156,11 @@
         if(!input.value){
           notInvited.classList.remove('d-none');
         } else {
-          val = input.value;
+          val = (input.value).toLowerCase();
 
-          check = masterList?.filter((e) => { return e === val; });
+          check = invitedList.filter((e) => {
+            return e === val;
+          });
 
           if(check?.length > 0){
             invited.classList.remove('d-none');
