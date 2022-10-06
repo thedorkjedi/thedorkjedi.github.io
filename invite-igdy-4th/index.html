@@ -62,14 +62,47 @@
       h1 { font-size: 36px; padding: 0 0 16px; font-weight: 600; }
       h2 { font-size: 24px; font-style: italic; color: #999 }
       .d-none {
-        display: none;
+        display: none!important;
       }
       .v-none {
         visibility: hidden;
       }
+      .invite-container-form{
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+      }
+      .invite-container-form label {
+        display: block;
+        text-align: center;
+        font-size: 36px;
+        font-weight: 600;
+        padding-bottom: 12px;
+      }
+      .invite-container-form input {
+        font-size: 36px;
+        padding: 6px;
+        width: 420px;
+        margin: 0 auto 12px;
+      }
+      .invite-container-form button {
+        display: block;
+        margin: 0 auto;
+        font-size: 36px;
+        font-weight: bold;
+        padding: 10px;
+        width: 430px;
+      }
     </style>
   </head>
   <body>
+    <div class="invite-container-form" id="invite-test">
+      <div class="invite-form">
+        <label>Tell me your surname</label>
+        <input type="text" class="form-text" id="form-text" />
+        <button onclick="checkSurname()">Send</button>
+      </div>
+    </div>
     <div class="invite-container d-none" id="invited">
       <div class="invite-root">
         <div class="shadow"></div>
@@ -94,14 +127,36 @@
         'guelas',
         'vengua',
       ];
-      let test = prompt("What's your surname?");
+      // let test = prompt("What's your surname?");
       let invited = document.querySelectorAll('#invited')[0];
       let page1 =  document.querySelectorAll('#page1')[0];
       let page2 =  document.querySelectorAll('#page2')[0];
       let page3 =  document.querySelectorAll('#page3')[0];
       let hands =  document.querySelectorAll('#page3')[0];
       let download = document.querySelectorAll('invite-download')[0];
+      let input = document.querySelectorAll('#form-text')[0];
+      let iv = document.querySelectorAll('#invite-test')[0];
       let counter = 2;
+
+      function checkSurname() {
+        let val = "";
+
+        if(!input.value){
+          notInvited.classList.remove('d-none');
+        } else {
+          val = input.value;
+
+          check = invitedList.filter((e) => { return e === val; });
+
+          if(check?.length > 0){
+            invited.classList.remove('d-none');
+          } else {
+            notInvited.classList.remove('d-none');
+          }
+        }
+
+        iv?.classList?.add('d-none');
+      }
 
       function changePage(){
         if (counter == 2) {
@@ -122,14 +177,8 @@
         }
       }
 
-      let notInvited = document.querySelectorAll('#notInvited')[0];
-      let check = invitedList.filter((e) => { return e === test; });
-
-      if(check?.length > 0){
-        invited.classList.remove('d-none');
-      } else {
-        notInvited.classList.remove('d-none');
-      }
+      // let notInvited = document.querySelectorAll('#notInvited')[0];
+      // let check = invitedList.filter((e) => { return e === test; });
     </script>
   </body>
 </html>
