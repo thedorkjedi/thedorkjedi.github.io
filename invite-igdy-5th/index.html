@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+        <title>Just another secret page!</title>
+        <link href="https://fonts.cdnfonts.com/css/spongebob-font-condensed" rel="stylesheet">
+        <link href="css/main.css" rel="stylesheet" type="text/css" />
+        
+        <script src="js/invite-list.js"></script>
+        <script src="js/main.js"></script>
+    </head>
+    <body class="hidden">
+        <div class="screen">
+            <div class="bubble">
+                <div class="speech right sbf">
+                    <span class="invite-init">State your <span class="impt">LAST NAME!</span></span>
+                    <span class="not-invited hidden">HMPH! <br /> Move along! Nuthin' to see here!</span>
+                    <div class="change-line-height">
+                        <input onblur="this.focus()" autofocus="true" type="text" onkeypress="keypress(this)" class="sbfc input" id="invite-name" />
+                        <button class="sbfc submit" onclick="checkInvite()">Tell Patrick</button>
+                    </div>
+                </div>
+            </div>
+            <img class="ptrck ptrck-init" src="img/initial-guard.png" />
+            <img class="ptrck ptrck-not hidden" src="img/not-invited.png" />
+        </div>
+        <div class="invited-screen hidden">
+            <div class="invited-bubble">
+                <div class="speech speech-second left sbfc">
+                    <input type="hidden" value="0" id="speech-second-iteration" />
+                    <span class="second-speech-dialog second-initial">Oh, that's right. You're in the list, <span id="name-invitee"></span>. Listen to what i'll say, okay?</span>
+                    <span class="second-speech-dialog second-dresscode hidden">First, might wanna try wearing some of these example color combinations i'll be showing you.</span>
+                    <span class="second-speech-dialog second-dresscode-gallery hidden scrollable-box">
+                        <img src="gal/gal1.jpg" />
+                        <img src="gal/gal2.jpg" />
+                        <img src="gal/gal3.jpg" />
+                        <img src="gal/gal4.jpg" />
+                        <img src="gal/gal5.jpg" />
+                        <img src="gal/gal6.jpg" />
+                        <img src="gal/gal7.jpg" />
+                        <img src="gal/gal8.jpg" />
+                        <img src="gal/gal9.jpg" />
+                        <img src="gal/gal10.jpg" />
+                        <img src="gal/gal11.jpg" />
+                        <img src="gal/gal12.jpg" />
+                    </span>
+                    <span class="second-speech-dialog second-time hidden">Second, you need to arrive at 1:30PM at the venue, okay?</span>
+                    <span class="second-speech-dialog second-last hidden">Make sure you noted these down, alright? I'll pass you over to SpongeBob.</span>
+                    <button class="sbfc submit" onclick="incrementSpeech()">
+                        <span class="second-speech-confirm confirm-first">Got it, Squidward!</span>
+                        <span class="second-speech-confirm sec-confirm hidden">Duly noted!</span>
+                        <span class="second-speech-confirm third-confirm hidden">I'll remember these!</span>
+                        <span class="second-speech-confirm fourth-confirm hidden">Cast in stone!</span>
+                        <span class="second-speech-confirm fifth-confirm hidden">Ready when you are!</span>
+                    </button>
+                </div>
+            </div>
+            <img class="sqdwrd sqdwrd-init" src="img/sqdwrd.png" />
+        </div>
+        <div class="last-screen hidden">
+            <div class="last-bubble">
+                <div class="speech right last-speech sbfc">
+                    <span>HELLO, guys! Glad to see you onboard!</span>
+                </div>
+            </div>
+            <img class="spbob spbob-init" src="img/spbob.png" />
+        </div>
+    </body>
+</html>

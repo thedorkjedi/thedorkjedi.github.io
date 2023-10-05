@@ -1,0 +1,183 @@
+* { margin: 0; padding: 0; box-sizing: border-box; } 
+html, body { 
+    font: 16px/1 "Arial", sans-serif; line-height: 1; 
+    width: 100vw; height: 100vh; position: relative;
+    background: transparent url('../img/bg-init.png') center center no-repeat;
+    background-size: cover;
+}
+
+.sbf { font-family: 'SpongeBob Font Condensed', sans-serif; }
+.sbfc { font-family: 'SpongeBob Font Wide', sans-serif; }
+
+.invited-bg { background: transparent url('../img/krusty-inner-og.png') 30% bottom no-repeat!important; background-size: cover !important; }
+.kitchen-bg { background: transparent url('../img/krusty-kitchen.png') 30% bottom no-repeat!important; background-size: cover !important; }
+
+.screen, .invited-screen, .last-screen {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    display: grid;
+}
+
+.speech {
+    font-size: 4rem;
+    line-height: 1.4;
+    color: #000;
+    background: #fff;
+    position: relative;
+    padding: 35px 20px 20px;
+    border-radius: 10px;
+    margin: 50px auto;
+    max-width: 480px;
+    box-shadow: 3px 3px 20px 0px rgba(0,0,0,.3);
+}
+.speech-second {
+    font-size: 2rem;
+    line-height: 1.4;
+    color: #03507e;
+    -webkit-text-stroke: 1px #b3c6c4;
+    background: #f3efb7;
+    position: relative;
+    padding: 30px 15px 15px;
+    border-radius: 10px;
+    margin: 50px auto;
+    max-width: 480px;
+    box-shadow: 3px 3px 20px 0px rgba(0,0,0,.3);
+}
+.speech::after {
+    content: "";
+    border: 20px solid transparent;
+    position: absolute;
+}
+
+.right.speech::after {
+    border-left-color: #fff;
+    border-right: 0;
+    right: -20px; top: 90%;
+    margin-top: -20px;
+}
+.right.last-speech::after{
+    margin-top: -40px;
+}
+
+.left.speech::after {
+    border-right-color: #f3efb7;
+    border-left: 0;
+    left: -20px; top: 90%;
+    margin-top: -20px;
+}
+
+.ptrck {
+    width: 25%;
+    height: auto;
+    margin: auto auto -2% 60%;
+}
+
+.sqdwrd {
+    width: 18%;
+    height: auto;
+    margin: auto 57% -2% auto;
+}
+
+.spbob {
+    width: 29%;
+    height: auto;
+    margin: auto auto -3% 57%;
+}
+
+
+.bubble, .invited-bubble, .last-bubble {
+    z-index: 0;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    bottom: 35%;
+}
+
+.input {
+    font-size: 2rem;
+    padding: 16px;
+    width: 100%;
+    margin-top:0px;
+    border-radius: 4px;
+    box-shadow: 0 3px 3px 0 rgba(0,0,0,.3);
+}
+.change-line-height{
+    line-height: 1;
+}
+
+.submit {
+    border: 0;
+    margin-top: 20px;
+    background-color: #ff808b;
+    color: #000;
+    font-size: 2rem;
+    padding: 10px 10px 2px;
+    border-radius: 4px;
+    width: 100%;
+    box-shadow: 0 3px 3px 0 rgba(0,0,0,.3);
+}
+
+.impt {
+    color: #0457A0;
+}
+
+.submit:hover {
+    background-color: #FFF56C;
+    color: #0457A0;
+}
+
+.scrollable-box {
+    display: block;
+    width: 100%;
+    height: 300px;
+    overflow: auto;
+}
+
+.scrollable-box img {
+    height: 100%;
+}
+
+.hidden {
+    display: none!important;
+}
+
+@media screen and (max-width: 1024px) {
+    .ptrck { min-width: 480px; }
+    .bubble { bottom: 20%; }
+    .speech { 
+        font-size: 2.8rem;
+        max-width: 320px; 
+    }
+    .input, .submit { font-size: 1.6rem; }
+}
+
+@media screen and (max-width: 768px) {
+    .ptrck { min-width: 400px; }
+    .bubble { bottom: 20%; padding: 0px; }
+    .speech { 
+        padding:25px 10px 10px;
+        font-size: 2rem;
+        max-width: 220px; 
+    }
+    .right.speech::after {
+        top: 85%;
+    }
+    .input, .submit { font-size: 1rem; }
+}
+
+@media screen and (max-width: 767px) {
+    .ptrck { min-width: 300px; margin: auto auto -2% 50%; }
+    .bubble { bottom: 20%; padding: 0px; }
+    .speech { 
+        padding:25px 10px 10px;
+        font-size: 2rem;
+        max-width: 220px; 
+        margin: 50px auto auto 20px;
+    }
+    .right.speech::after {
+        top: 85%;
+    }
+    .input, .submit { font-size: 1rem; }
+}
