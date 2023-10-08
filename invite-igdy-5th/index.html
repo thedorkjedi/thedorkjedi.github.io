@@ -9,9 +9,10 @@
         <link href="css/main.css" rel="stylesheet" type="text/css" />
         
         <script src="js/invite-list.js"></script>
+        <script src="js/invite-img.js"></script>
         <script src="js/main.js"></script>
     </head>
-    <body class="hidden">
+    <body class="hidden" onload="focusInput()">
         <div class="screen">
             <div class="bubble">
                 <div class="speech right sbf">
@@ -30,8 +31,8 @@
             <div class="invited-bubble">
                 <div class="speech speech-second left sbfc">
                     <input type="hidden" value="0" id="speech-second-iteration" />
-                    <span class="second-speech-dialog second-initial">Oh, that's right. You're in the list, <span id="name-invitee"></span>. Listen to what i'll say, okay?</span>
-                    <span class="second-speech-dialog second-dresscode hidden">First, might wanna try wearing some of these example color combinations i'll be showing you.</span>
+                    <span class="second-speech-dialog second-initial">Oh, that's right. You're on the list, <span id="name-invitee"></span>. Listen to what i'll say, okay?</span>
+                    <span class="second-speech-dialog second-dresscode hidden">First, You should come wearing your spongebob inspired outifts, like these...</span>
                     <span class="second-speech-dialog second-dresscode-gallery hidden scrollable-box">
                         <img src="gal/gal1.jpg" />
                         <img src="gal/gal2.jpg" />
@@ -46,23 +47,33 @@
                         <img src="gal/gal11.jpg" />
                         <img src="gal/gal12.jpg" />
                     </span>
-                    <span class="second-speech-dialog second-time hidden">Second, you need to arrive at 1:30PM at the venue, okay?</span>
-                    <span class="second-speech-dialog second-last hidden">Make sure you noted these down, alright? I'll pass you over to SpongeBob.</span>
+                    <span class="second-speech-dialog second-time hidden">Second, you need to arrive at the venue by 2:00 PM, on October 21st, okay?</span>
+                    <span class="second-speech-dialog second-last hidden">Make sure you get these noted down, alright? I'll pass you over to SpongeBob.</span>
                     <button class="sbfc submit" onclick="incrementSpeech()">
                         <span class="second-speech-confirm confirm-first">Got it, Squidward!</span>
-                        <span class="second-speech-confirm sec-confirm hidden">Duly noted!</span>
-                        <span class="second-speech-confirm third-confirm hidden">I'll remember these!</span>
-                        <span class="second-speech-confirm fourth-confirm hidden">Cast in stone!</span>
-                        <span class="second-speech-confirm fifth-confirm hidden">Ready when you are!</span>
+                        <span class="second-speech-confirm sec-confirm hidden">Show me!</span>
+                        <span class="second-speech-confirm third-confirm hidden">Got it!</span>
+                        <span class="second-speech-confirm fourth-confirm hidden">Aye, aye Squidward!</span>
+                        <span class="second-speech-confirm fifth-confirm hidden">I'm ready! I'm ready!</span>
                     </button>
                 </div>
             </div>
             <img class="sqdwrd sqdwrd-init" src="img/sqdwrd.png" />
         </div>
         <div class="last-screen hidden">
+            <input type="hidden" id="last-prog" value="0" />
             <div class="last-bubble">
                 <div class="speech right last-speech sbfc">
-                    <span>HELLO, guys! Glad to see you onboard!</span>
+                    <span class="last-spb ls-one">HELLO, guys! Glad to see you onboard!</span>
+                    <span class="last-spb ls-two hidden">The party will be held here:</span>
+                    <img class="last-spb last-spb-img ls-two qr-img hidden" src="img/qr.png" />
+                    <span class="last-spb ls-three hidden">Download this invite, in case you forget about it. See you soon!</span>
+                    <a onclick="downloadOnce()" class="last-spb ls-three e-vite hidden">Download Invite</a>
+                    <button class="sbfc submit" onclick="incrementLast()">
+                        <span class="last-confirm last-init">Oh Hey! Spongebob!</span>
+                        <span class="last-confirm last-sec hidden">Scanned it!</span>
+                        <span class="last-confirm last-last hidden">See you soon!</span>
+                    </button>
                 </div>
             </div>
             <img class="spbob spbob-init" src="img/spbob.png" />
