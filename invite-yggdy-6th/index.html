@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+  <link rel="manifest" href="manifest.json">
+  <title>Ready for another adventure?</title>
+  <link href="/css/main.css" type="text/css" rel="stylesheet" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="js/invite-list.js"></script>
+</head>
+
+<body>
+  <div class="screen first-screen hide">
+    <div class="speech-bubble speech-bubble-generic f-pkmn hide">
+      <span class="tx-1 hide">Hi, <span class="invitee-name"></span>! Professor Oak here. This day has finally arrived! I won't give you a pokemon, but i'll give you something better instead!</span>
+      <span class="nxt-btn hide nxt">Next</span>
+    </div>
+    <div class="speech-bubble-2 speech-bubble-generic f-pkmn hide">
+      <span class="tx-2 hide">It's for . . . YGGDY's 6TH BIRTHDAY! But please, don't tell anyone. I don't want Team Rocket to hear of our surprise plans!</span>
+      <span class="nxt-btn-2 hide nxt">Next</span>
+    </div>
+    <div class="speech-bubble-3 speech-bubble-generic f-pkmn hide">
+      <span class="tx-3 hide">First off, you have to come in a dress code of sorts. I'll give you a pokedex for that, Hang on a minute! . . . Where is that thing? . . . There!</span>
+      <span class="nxt-btn-3 hide nxt">Show Pok&#233;dex</span>
+    </div>
+    <div class="pokedex-container hide">
+      <div class="dress-code" id="dcc">
+        <div class="progress-bar">
+          <div class="circle border">
+          </div>
+        </div>
+      </div>
+      <img src="/img/pokedex.png" class="pokedex" />
+      <span class="nxt-btn-4 f-pkmn hide nxt">Okay! Got it!</span>
+    </div>
+    <div class="speech-bubble-5 speech-bubble-generic f-pkmn hide">
+      <span class="tx-5 hide">Make sure to come in dressed-up, okay? Now off you go, see you later!</span>
+      <span class="nxt-btn-5 hide nxt">Thanks, Professor!</span>
+    </div>
+    <img src="/img/oak.png" id="prof" />
+    <div class="blank-bg"></div>
+  </div>
+
+  <div class="screen second-screen hide">
+    <div class="speech-bubble speech-bubble-generic f-pkmn hide">
+      <span class="tx-1 hide">Hi, <span class="invitee-name"></span>! Good to see you! Officer Jenny here. Has Professor Oak told you anything?</span>
+      <span class="nxt-btn hide nxt">Yup, he surely did!</span>
+    </div>
+    <div class="speech-bubble-2 speech-bubble-generic f-pkmn hide">
+      <span class="tx-2 hide">Keep it a secret, okay? We don't want the meddlesome Team Rocket spoiling our surprise!</span>
+      <span class="nxt-btn-2 hide nxt">I will, I promise!</span>
+    </div>
+    <div class="speech-bubble-3 speech-bubble-generic f-pkmn hide">
+      <span class="tx-3 hide">By the way, surely Professor Oak told you about the time and date, right . . . ?</span>
+      <span class="nxt-btn-3 hide nxt">He actually didn't tell me</span>
+    </div>
+    <div class="speech-bubble-4 speech-bubble-generic f-pkmn hide">
+      <span class="tx-4 hide">Ha ha ha ! Figured he would forget it.. It's this coming Sunday, October 6, at 2:30PM!</span>
+      <span class="nxt-btn-4 hide nxt">Sunday, October 6, at 2:30PM, Got it!</span>
+    </div>
+    <div class="speech-bubble-5 speech-bubble-generic f-pkmn hide">
+      <span class="tx-5 hide">The address would be at the usual, McDonald's E. Rodriguez Sr. Ave. cor. Dona Juana St., New Manila, Quezon City.</span>
+      <span class="nxt-btn-5 hide nxt">Nice, same as last time!</span>
+    </div>
+    <div class="speech-bubble-6 speech-bubble-generic f-pkmn hide">
+      <span class="tx-6 hide">Here, i'll put it on your pokedex as a QR Code, so you could save it.</span>
+      <span class="nxt-btn-6 hide nxt">Thank you, Officer!</span>
+    </div>
+    <div class="pokedex-container hide">
+      <div class="dress-code" id="qrc">
+        <div class="progress-bar">
+          <div class="circle border">
+          </div>
+        </div>
+      </div>
+      <img src="/img/pokedex.png" class="pokedex" />
+      <span class="nxt-btn-7 f-pkmn hide nxt">Okay! Got it!</span>
+    </div>
+    <div class="speech-bubble-8 speech-bubble-generic f-pkmn hide">
+      <span class="tx-8 hide">Okay then, nice seeing you, <span class="invitee-name"></span>! Don't forget, this Sunday, okay? And don't loose that invite!</span>
+      <span class="nxt-btn-8 hide nxt">Yup! Thank you, Officer!</span>
+    </div>
+    <div class="speech-bubble-9 speech-bubble-generic f-pkmn hide">
+      <span class="tx-9 hide">** You dropped INVITE LETTER! **</span>
+      <span class="nxt-btn-9 hide nxt">. . .</span>
+    </div>
+    <img src="/img/police.png" id="police" />
+    <div class="blank-bg"></div>
+  </div>
+
+  <div class="screen third-screen hide">
+    <div class="speech-bubble speech-bubble-generic f-pkmn hide">
+      <span class="tx-1 hide">*Female-Voice*: YGGDY's 6TH BIRTHDAY, huh . . . <span class="invitee-name"></span>'s lucky to be invited!</span>
+      <span class="nxt-btn hide nxt">. . .</span>
+    </div>
+    <div class="speech-bubble-2 speech-bubble-generic f-pkmn hide">
+      <span class="tx-2 hide">*Male-Voice*: Do you think Pikachu will be there . . . ?</span>
+      <span class="nxt-btn-2 hide nxt">. . .</span>
+    </div>
+    <div class="speech-bubble-3 speech-bubble-generic f-pkmn hide">
+      <span class="tx-3 hide">*Female-Voice*: They'll be there... After all, we have nothing to loose!</span>
+      <span class="nxt-btn-3 hide nxt">. . .</span>
+    </div>
+    <div class="speech-bubble-4 speech-bubble-generic f-pkmn hide">
+      <span class="tx-4 hide">*Pokemon-Voice*: Sounds about right!</span>
+      <a href="rsrc/yggdy_6th-bday-party.png" download target="_blank" class="nxt-btn-4 hide nxt">Pick up invite left by TEAM ROCKET!</a>
+    </div>
+    <div class="blank-bg"></div>
+  </div>
+
+  <div class="screen invite-scr flx-ctr f-pkmn">
+    <div class="center-scr invite-mod">
+      <img src="/img/pkmn-logo.png" class="intro-logo" />
+      <label>What's your First Name?</label>
+      <input id="invited" type="text" class="f-pkmn" placeholder="Your First Name Here" autofocus></input>
+      <button id="start" class="f-pkmn nxt">Begin Adventure</button>
+    </div>
+    <img src="img/jigglypuff.png" id="jigglypuff" class="hide" />
+  </div>
+
+  <div class="rotate-container">
+    <div class="rotate">
+      <img src="img/rotate.png" class="rotation" />
+      <span class="f-pkmn">Please rotate your screen to landscape for better viewing experience.</span>
+    </div>
+  </div>
+
+  <audio id="bgm" src="rsrc/bgm-pokemon.mp3" autoplay loop></audio>
+  <audio id="bgm2" src="rsrc/bgm-pallet.mp3" autoplay loop></audio>
+  <audio id="bgm3" src="rsrc/bgm-tr.mp3" autoplay loop></audio>
+  <audio id="battle" src="rsrc/pokemon-battle.mp3" autoplay loop></audio>
+
+  <script>
+    window.IVSettings = {
+      textDelay: 10, //500
+      showNextDelay: 500, //500
+      firstScreenBlank: 4000, //4000
+      animateScreen: 2000, //2000
+    };
+
+    function triggerFirst(bubble, nxtBtn,container){
+      var $el = bubble,
+          text = bubble.text(),
+          speed = window.IVSettings.textDelay,
+          i = 0,
+          wordArray = text.split(' ');
+      bubble.empty();
+      function nextButton(){
+        nxtBtn.removeClass('hide');
+      }
+
+      $('<div/>',{
+      class: 'text-bub'
+      }).prependTo(container);
+
+      INV = setInterval(function () {
+        if (i >= wordArray.length - 1) {
+          clearInterval(INV);
+          setTimeout(function(){
+            nextButton();
+          },window.IVSettings.showNextDelay);
+        }
+
+        container.find('.text-bub').append(wordArray[i] + ' ');
+        i++;
+      }, speed);
+    }
+
+    function isInvited(){
+      $('#bgm')[0].play();
+      $('.invite-scr').addClass('hide');
+      $('.first-screen').removeClass('hide');
+      window.setTimeout(()=>{
+        $('.first-screen .blank-bg').addClass('animate-blank');
+        window.setTimeout(()=>{
+          $('.first-screen .blank-bg').hide();
+          $('.first-screen .speech-bubble').removeClass('hide');
+          triggerFirst($('.first-screen .speech-bubble .tx-1'),$(".first-screen .nxt-btn"),$('.first-screen .speech-bubble'));
+        },window.IVSettings.animateScreen);
+      },window.IVSettings.firstScreenBlank);
+    }
+
+    function fireUnloadEvent() {
+      $(window).on('beforeunload',(ev)=>{
+        ev.preventDefault();
+      });
+    }
+
+    window.invitePatience = 0;
+    window.inviteeHistory = [];
+
+    window.checkHistory = function() {
+      var test = inviteeHistory;
+      return test.filter((e)=>{
+        var test = !(invitee == e) ? true : false;
+        return test;
+      });
+    };
+
+    window.invitee = '';
+
+    $(document).ready(()=>{
+      $('#bgm')[0].pause();
+      $('#bgm2')[0].pause();
+      $('#bgm3')[0].pause();
+      $('#battle')[0].pause();
+      $('.screen').addClass('hide');
+      $('.invite-scr').removeClass('hide');
+
+      var mList = (atob(masterList)).split(','),
+        invitedList = mList.map((e) => {
+          return atob(e);
+        });
+
+      $('#start').click(()=>{
+      invitee = ($('#invited').val()).toString().toLowerCase();
+      var sanitized = "";
+      var checkInvitee = invitee.indexOf(' ') > -1 ? invitee.split(' ') : invitee;
+      var initCheck = false;
+      var check = false;
+      if(invitee?.length > 0) {
+        check = (invitedList.filter((e) => {
+          var test = invitee == e ? true : false;
+          return test;
+        }));
+      }
+
+
+      if(invitee.length > 0) {
+        window.inviteeHistory.push(invitee);
+      if(check.length > 0) {
+        var firstName = invitee.charAt(0).toUpperCase() + invitee.slice(1);
+        $('.invitee-name').text(firstName);
+
+        $('#bgm')[0].pause();
+        $('#bgm2')[0].pause();
+        $('#bgm3')[0].pause();
+        $('#battle')[0].pause();
+
+        isInvited();
+        fireUnloadEvent();
+      } else {
+        if(window.invitePatience < 3){
+        var inviteHistoryString = window.inviteeHistory.join(',').toString();
+        var duplicateHistory = checkHistory();
+        if(duplicateHistory.length > 0 || inviteeHistory.length == 1){
+
+        window.invitePatience++;
+        if(window.invitePatience == 1) {
+          $('#jigglypuff').removeClass('hide');
+          window.setTimeout(()=>{
+            $('#battle')[0].play();
+            $('#jigglypuff').addClass('animate-show');
+          },200);
+        }
+        if(window.invitePatience == 2) {
+          $('#jigglypuff').addClass('puff-transition');
+
+          window.setTimeout(()=>{
+          $('.invite-scr').addClass('battle-wp');
+          $('#jigglypuff').addClass('animate-blank');
+            window.setTimeout(()=>{
+              $('#jigglypuff').addClass('hide');
+            },500);
+          },10000);
+        }
+        }
+        }
+      }
+      }
+      });
+
+      $('.first-screen').find('.nxt-btn').click(()=>{
+        $('.first-screen .speech-bubble').addClass('hide');
+        $('.first-screen .speech-bubble-2').removeClass('hide');
+
+        triggerFirst($('.first-screen .speech-bubble-2 .tx-2'),$(".first-screen .nxt-btn-2"),$('.first-screen .speech-bubble-2'));
+      });
+
+      $('.first-screen').find('.nxt-btn-2').click(()=>{
+        $('.first-screen .speech-bubble-2').addClass('hide');
+        $('.first-screen .speech-bubble-3').removeClass('hide');
+
+        triggerFirst($('.first-screen .speech-bubble-3 .tx-3'),$(".first-screen .nxt-btn-3"),$('.first-screen .speech-bubble-3'));
+      });
+
+      $('.first-screen').find('.nxt-btn-3').click(()=>{
+        $('.first-screen .speech-bubble-3').addClass('hide');
+        $('.first-screen .pokedex-container').removeClass('hide');
+
+        window.setTimeout(()=>{
+          $('.first-screen .pokedex-container #dcc').empty();
+          for(i=0;i<6;i++){
+            $('<img>', { 'class': 'dc-img', 'src': 'img/dress/dress-'+ (i + 1) +'.jpg'}).appendTo($('.first-screen .pokedex-container #dcc'));
+          }
+          $(".first-screen .pokedex-container .nxt-btn-4").removeClass('hide');
+        },500);
+      });
+
+      $('.first-screen').find('.nxt-btn-4').click(()=>{
+        $('.first-screen .pokedex-container').addClass('hide');
+        $('.first-screen .speech-bubble-5').removeClass('hide');
+
+        triggerFirst($('.first-screen .speech-bubble-5 .tx-5'),$(".first-screen .nxt-btn-5"),$('.first-screen .speech-bubble-5'));
+      });
+
+      $('.first-screen').find('.nxt-btn-5').click(()=>{
+        $('#bgm')[0].pause();
+        $('.first-screen').addClass('hide');
+        $('.second-screen').removeClass('hide');
+        window.setTimeout(()=>{
+          $('#bgm2')[0].play();
+        },300);
+        window.setTimeout(()=>{
+          $('.second-screen .blank-bg').addClass('animate-blank');
+          window.setTimeout(()=>{
+            $('.second-screen .blank-bg').hide();
+            $('.second-screen .speech-bubble').removeClass('hide');
+            triggerFirst($('.second-screen .speech-bubble .tx-1'),$(".second-screen .nxt-btn"),$('.second-screen .speech-bubble'));
+          },window.IVSettings.firstScreenBlank);
+        },1000);
+      });
+
+      $('.second-screen').find('.nxt-btn').click(()=>{
+        $('.second-screen .speech-bubble').addClass('hide');
+        $('.second-screen .speech-bubble-2').removeClass('hide');
+
+        triggerFirst($('.second-screen .speech-bubble-2 .tx-2'),$(".second-screen .nxt-btn-2"),$('.second-screen .speech-bubble-2'));
+      });
+
+      $('.second-screen').find('.nxt-btn-2').click(()=>{
+        $('.second-screen .speech-bubble-2').addClass('hide');
+        $('.second-screen .speech-bubble-3').removeClass('hide');
+
+        triggerFirst($('.second-screen .speech-bubble-3 .tx-3'),$(".second-screen .nxt-btn-3"),$('.second-screen .speech-bubble-3'));
+      });
+
+      $('.second-screen').find('.nxt-btn-3').click(()=>{
+        $('.second-screen .speech-bubble-3').addClass('hide');
+        $('.second-screen .speech-bubble-4').removeClass('hide');
+
+        triggerFirst($('.second-screen .speech-bubble-4 .tx-4'),$(".second-screen .nxt-btn-4"),$('.second-screen .speech-bubble-4'));
+      });
+      $('.second-screen').find('.nxt-btn-4').click(()=>{
+        $('.second-screen .speech-bubble-4').addClass('hide');
+        $('.second-screen .speech-bubble-5').removeClass('hide');
+
+        triggerFirst($('.second-screen .speech-bubble-5 .tx-5'),$(".second-screen .nxt-btn-5"),$('.second-screen .speech-bubble-5'));
+      });
+      $('.second-screen').find('.nxt-btn-5').click(()=>{
+        $('.second-screen .speech-bubble-5').addClass('hide');
+        $('.second-screen .speech-bubble-6').removeClass('hide');
+
+        triggerFirst($('.second-screen .speech-bubble-6 .tx-6'),$(".second-screen .nxt-btn-6"),$('.second-screen .speech-bubble-6'));
+      });
+      $('.second-screen').find('.nxt-btn-6').click(()=>{
+        $('.second-screen .speech-bubble-6').addClass('hide');
+        $('.second-screen .pokedex-container').removeClass('hide');
+        window.setTimeout(()=>{
+          $(".second-screen .pokedex-container #qrc").empty();
+          $("<img>",{ "class": "qrc-img", "src": "rsrc/invite-code.png" }).appendTo($(".second-screen .pokedex-container #qrc"));
+          $(".second-screen .pokedex-container #qrc").addClass('towhitebg');
+
+          $(".second-screen .pokedex-container .nxt-btn-7").removeClass('hide');
+        },500);
+        // triggerFirst($('.second-screen .speech-bubble-6 .tx-6'),$(".second-screen .nxt-btn-6"),$('.second-screen .speech-bubble-6'));
+      });
+      $('.second-screen').find('.nxt-btn-7').click(()=>{
+        $('.second-screen .pokedex-container').addClass('hide');
+        $('.second-screen .speech-bubble-8').removeClass('hide');
+
+        triggerFirst($('.second-screen .speech-bubble-8 .tx-8'),$(".second-screen .nxt-btn-8"),$('.second-screen .speech-bubble-8'));
+      });
+
+      $('.second-screen').find('.nxt-btn-8').click(()=>{
+        $('.second-screen .speech-bubble-8').addClass('hide');
+        $('#police').addClass('animate-blank');
+        window.setTimeout(()=>{
+          $('.second-screen .speech-bubble-9').removeClass('hide');
+          triggerFirst($('.second-screen .speech-bubble-9 .tx-9'),$(".second-screen .nxt-btn-9"),$('.second-screen .speech-bubble-9'));
+        },1000);
+      });
+
+      $('.second-screen').find('.nxt-btn-9').click(()=>{
+        $('#bgm2')[0].pause();
+        $('.second-screen').addClass('hide');
+        $('.third-screen').removeClass('hide');
+        window.setTimeout(()=>{
+          $('#bgm3')[0].play();
+        },500);
+        window.setTimeout(()=>{
+          $('.third-screen .blank-bg').addClass('animate-blank');
+          window.setTimeout(()=>{
+            $('.third-screen .blank-bg').hide();
+            $('.third-screen .speech-bubble').removeClass('hide');
+            triggerFirst($('.third-screen .speech-bubble .tx-1'),$(".third-screen .nxt-btn"),$('.third-screen .speech-bubble'));
+          },window.IVSettings.firstScreenBlank);
+        },1000);
+      });
+
+      $('.third-screen').find('.nxt-btn').click(()=>{
+        $('.third-screen .speech-bubble').addClass('hide');
+        $('.third-screen .speech-bubble-2').removeClass('hide');
+
+        triggerFirst($('.third-screen .speech-bubble-2 .tx-2'),$(".third-screen .nxt-btn-2"),$('.third-screen .speech-bubble-2'));
+      });
+
+      $('.third-screen').find('.nxt-btn-2').click(()=>{
+        $('.third-screen .speech-bubble-2').addClass('hide');
+        $('.third-screen .speech-bubble-3').removeClass('hide');
+
+        triggerFirst($('.third-screen .speech-bubble-3 .tx-3'),$(".third-screen .nxt-btn-3"),$('.third-screen .speech-bubble-3'));
+      });
+
+      $('.third-screen').find('.nxt-btn-3').click(()=>{
+        $('.third-screen .speech-bubble-3').addClass('hide');
+        $('.third-screen .speech-bubble-4').removeClass('hide');
+
+        $(window).off('beforeunload');
+
+        triggerFirst($('.third-screen .speech-bubble-4 .tx-4'),$(".third-screen .nxt-btn-4"),$('.third-screen .speech-bubble-4'));
+      });
+
+    });
+  </script>
+</body>
+
+</html>
